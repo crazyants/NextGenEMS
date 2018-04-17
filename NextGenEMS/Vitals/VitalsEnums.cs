@@ -6,11 +6,45 @@ using System.Threading.Tasks;
 
 namespace NextGenEMS.Vitals
 {
-    class VitalsEnums
+    public class VitalsEnums
     {
-        enum RespEffort
+
+        #region  General
+
+        public enum PulseQuality
+        {
+            Regular,
+            Irregular
+        };
+
+        #endregion
+
+        #region Respirations
+
+
+        public enum RespEffort
         {
             Temp
         };
+
+        #endregion
+
+        #region Blood Pressure
+
+        public enum BpReadingMethod
+        {
+            Manual, 
+            Automated
+        }
+
+        public enum BpReadingLocation
+        {
+            LeftForearm, 
+            RightForearm,
+            LeftWrist,
+            RightWrist
+        }
+
+        # endregion 
     }
 }
