@@ -17,6 +17,13 @@ namespace NextGenEMS.Vitals
             Irregular
         };
 
+        public enum MeasurementTime
+        {
+            FifteenSeconds,
+            ThirtySeconds,
+            OneMinute
+        };
+
         #endregion
 
         #region Respirations

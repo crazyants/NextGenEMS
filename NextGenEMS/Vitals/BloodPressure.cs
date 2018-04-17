@@ -2,14 +2,14 @@
 {
     public class BloodPressure
     {
-        public int Systolic;
+        public int Systolic { get; set; }
 
-        public int Diastolic;
+        public int Diastolic { get; set; }
 
-        public VitalsEnums.BpReadingMethod BpReadingMethod;
+        public VitalsEnums.BpReadingMethod BpReadingMethod { get; set; }
 
-        public VitalsEnums.BpReadingMethod BpReadingLocation;
+        public VitalsEnums.BpReadingMethod BpReadingLocation { get; set; }
 
-        public VitalsEnums.PulseQuality;
+        public VitalsEnums.PulseQuality PulseQuality { get; set; }
     }
 }
