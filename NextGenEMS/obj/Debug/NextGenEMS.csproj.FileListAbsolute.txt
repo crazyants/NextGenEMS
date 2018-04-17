@@ -1,0 +1,15 @@
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\bin\Debug\NextGenEMS.exe.config
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\bin\Debug\NextGenEMS.exe
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\bin\Debug\NextGenEMS.pdb
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\MainWindow.g.cs
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\App.g.cs
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS_MarkupCompile.cache
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS_MarkupCompile.lref
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\MainWindow.baml
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.g.resources
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.Properties.Resources.resources
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.csproj.GenerateResource.Cache
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.csproj.CoreCompileInputs.cache
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.exe
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.pdb
