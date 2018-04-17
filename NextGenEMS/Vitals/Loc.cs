@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NextGenEMS.Classes
+namespace NextGenEMS.Vitals
 {
-    public class Timestamp
+    public class Loc
     {
     }
 }

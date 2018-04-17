@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Vitals\Loc.cs" />
+    <Compile Include="Vitals\Respirations.cs" />
+    <Compile Include="Vitals\Temperature.cs" />
+    <Compile Include="Vitals\VitalsEnums.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -65,12 +69,14 @@
     </Compile>
     <Compile Include="Classes\Address.cs" />
     <Compile Include="Classes\Allergin.cs" />
+    <Compile Include="Vitals\BloodPressure.cs" />
     <Compile Include="Classes\ContactInfo.cs" />
     <Compile Include="Classes\Illness.cs" />
     <Compile Include="Classes\Medication.cs" />
     <Compile Include="Classes\Patient.cs" />
+    <Compile Include="Vitals\Pulse.cs" />
     <Compile Include="Classes\Timestamp.cs" />
-    <Compile Include="Classes\Vitals.cs" />
+    <Compile Include="Vitals\Vitals.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

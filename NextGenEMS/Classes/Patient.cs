@@ -17,7 +17,7 @@ namespace NextGenEMS.Classes
         //    <usage>Optional</usage>
         /// </summary>
         [DataMember]
-        public string PatientId;
+        public string PatientId { get; set; }
 
         /// <summary>
         // <number>ePatient.02</number>
@@ -31,7 +31,7 @@ namespace NextGenEMS.Classes
         // <PNNil>Yes</PNNil>
         /// </summary>
         [DataMember]
-        public string LastName;
+        public string LastName { get; set; }
 
         /// <summary>
         //        <number>ePatient.03</number>
@@ -45,7 +45,7 @@ namespace NextGenEMS.Classes
         //        <PNNil>Yes</PNNil>
         /// </summary>
         [DataMember]
-        public string FirstName;
+        public string FirstName { get; set; }
 
         /// <summary>
         //        <number>ePatient.04</number>
@@ -57,7 +57,7 @@ namespace NextGenEMS.Classes
         //        <usage>Optional</usage>
         /// </summary>
         [DataMember]
-        public string MiddleName;
+        public string MiddleName { get; set; }
 
         [DataMember]
         public Address PatientHomeAddress;
@@ -72,7 +72,7 @@ namespace NextGenEMS.Classes
         //        <usage>Required</usage>
         /// </summary>
         [DataMember]
-        public string Gender;
+        public string Gender { get; set; }
 
         /// <summary>
         //        <number>ePatient.14</number>
@@ -84,7 +84,7 @@ namespace NextGenEMS.Classes
         //        <usage>Required</usage>
         /// </summary>
         [DataMember]
-        public string Race;
+        public string Race { get; set; }
 
         /// <summary>
         //        <number>ePatient.17</number>
@@ -97,7 +97,7 @@ namespace NextGenEMS.Classes
         //        <PNNil>Yes</PNNil>
         /// </summary>
         [DataMember]
-        public string DateOfBirth;
+        public string DateOfBirth { get; set; }
 
         /// <summary>
         //        <number>ePatient.15</number>
@@ -109,59 +109,59 @@ namespace NextGenEMS.Classes
         //        <usage>Required</usage>
         /// </summary>
         [DataMember]
-        public string Age;
+        public string Age { get; set; }
 
         [DataMember]
-        public ContactInfo PatientContactInfo;
+        public ContactInfo PatientContactInfo { get; set; }
 
         [DataMember]
-        public ContactInfo PatientEmergencyContactInfo;
+        public ContactInfo PatientEmergencyContactInfo { get; set; }
 
         #endregion
 
         #region  SAMPLE Info
 
-        public string SignsAndSymptoms;
+        public string SignsAndSymptoms { get; set; }
 
         [DataMember]
-        public List<Allergin> Allergies;
+        public List<Allergin> Allergies { get; set; }
 
         [DataMember]
-        public List<Medication> CurrentMedications;
+        public List<Medication> CurrentMedications { get; set; }
 
         [DataMember]
-        public List<Illness> PastIllnesses;
+        public List<Illness> PastIllnesses { get; set; }
 
         [DataMember]
-        public string LastOralIntake;
+        public string LastOralIntake { get; set; }
 
         [DataMember]
-        public string Events;
+        public string Events { get; set; }
 
         #endregion
 
         #region OPQRST Info
 
         [DataMember]
-        public string Onset;
+        public string Onset { get; set; }
 
         [DataMember]
-        public string Provocation;
+        public string Provocation { get; set; }
 
         [DataMember]
-        public string QualityOfPain;
+        public string QualityOfPain { get; set; }
 
         [DataMember]
-        public string RegionAndRadiation;
+        public string RegionAndRadiation { get; set; }
 
         [DataMember]
-        public string Severity;
+        public string Severity { get; set; }
 
         [DataMember]
-        public string TimeSinceOnset;
+        public string TimeSinceOnset { get; set; }
 
         #endregion
 
-        public List<Vitals> VitalsReadings;
+        public List<Vitals.Vitals> VitalsReadings { get; set; }
     }
 }
