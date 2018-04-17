@@ -10,7 +10,7 @@ namespace NextGenEMS.Vitals
 
         public Pulse Pulse { get; set; }
 
-        public int OxygenLevel { get; set; }
+        public OxygenLevel OxygenLevel { get; set; }
 
         public Respirations Respirations { get; set; }
 

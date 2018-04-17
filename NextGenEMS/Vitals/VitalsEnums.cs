@@ -9,12 +9,23 @@ namespace NextGenEMS.Vitals
     public class VitalsEnums
     {
 
-        #region  General
+        #region  Pulse
 
         public enum PulseQuality
         {
             Regular,
             Irregular
+        };
+
+        public enum PulsePoint
+        {
+            Radial ,
+            Temporal,
+            Carotid,
+            Brachial,
+            Apical,
+            Femoral, 
+
         };
 
         public enum MeasurementTime
@@ -31,7 +42,25 @@ namespace NextGenEMS.Vitals
 
         public enum RespEffort
         {
-            Temp
+            Normal,
+            Labored,
+            Shallow,
+            Absent,
+            Assited
+        };
+
+        public enum RespSounds
+        {
+            Wheezing,
+            Stridor,
+            InspiratoryGasp,
+            Crackles
+        };
+
+        public enum RespObervationMethod
+        {
+            Ear,
+            Stethoscope,
         };
 
         #endregion
@@ -50,6 +79,16 @@ namespace NextGenEMS.Vitals
             RightForearm,
             LeftWrist,
             RightWrist
+        }
+
+        # endregion 
+
+        #region O2 Readings
+
+        public enum OxygenReadingMethod
+        {
+            Fingertip, 
+            Earlobe
         }
 
         # endregion 

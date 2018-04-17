@@ -8,5 +8,12 @@ namespace NextGenEMS.Vitals
 {
     public class Respirations
     {
+        public int RespirationRate;
+
+        public VitalsEnums.RespEffort RespEffort;
+
+        public VitalsEnums.RespEffort RespSounds;
+
+        public VitalsEnums.RespEffort RespObervationMethod;
     }
 }

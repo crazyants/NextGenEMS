@@ -10,6 +10,6 @@ namespace NextGenEMS.Vitals
     {
         public int OxygenPercent { get; set; }
 
-        public VitalsEnums.OxygenReadingMethod OxygenReadingMethod;
+        public VitalsEnums.OxygenReadingMethod OxygenReadingMethod { get; set; }
     }
 }
