@@ -104,5 +104,25 @@ namespace NextGenEMS.Vitals
         }
 
         #endregion
+
+        #region Temperature
+
+        public enum TemperatureUnits
+        {
+            Degrees,
+            Celcius
+        }
+
+        public enum TemperatureLocation
+        {
+            LeftEar,
+            RightEar,
+            Rectum,
+            Oral,
+            Axillary,
+            Temporal
+        }
+
+        #endregion
     }
 }
