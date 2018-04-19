@@ -19,12 +19,12 @@ namespace NextGenEMS.Vitals
 
         public enum PulsePoint
         {
-            Radial ,
+            Radial,
             Temporal,
             Carotid,
             Brachial,
             Apical,
-            Femoral, 
+            Femoral,
 
         };
 
@@ -69,13 +69,13 @@ namespace NextGenEMS.Vitals
 
         public enum BpReadingMethod
         {
-            Manual, 
+            Manual,
             Automated
         }
 
         public enum BpReadingLocation
         {
-            LeftForearm, 
+            LeftForearm,
             RightForearm,
             LeftWrist,
             RightWrist
@@ -87,10 +87,22 @@ namespace NextGenEMS.Vitals
 
         public enum OxygenReadingMethod
         {
-            Fingertip, 
+            Fingertip,
             Earlobe
         }
 
-        # endregion 
+        #endregion
+
+        #region Level Of Consciousness
+
+        public enum LocClassification
+        {
+            Alert,
+            Verbal,
+            Pain,
+            Unresponsive
+        }
+
+        #endregion
     }
 }

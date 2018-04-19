@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Vitals\Loc.cs" />
+    <Compile Include="Vitals\OxygenLevel.cs" />
     <Compile Include="Vitals\Respirations.cs" />
     <Compile Include="Vitals\Temperature.cs" />
     <Compile Include="Vitals\VitalsEnums.cs" />

@@ -8,5 +8,10 @@ namespace NextGenEMS.Vitals
 {
     public class Loc
     {
+        public VitalsEnums.LocClassification LocClassification;
+
+        public int AlertScore;
+
+        public string AlertnessNotes;
     }
 }
