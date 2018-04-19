@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace NextGenEMS.Vitals
 {
+    [DataContract]
     public class Respirations
     {
-        public int RespirationRate;
+        [DataMember]
+        public int RespirationRate { get; set; }
 
-        public VitalsEnums.RespEffort RespEffort;
+        [DataMember]
+        public VitalsEnums.RespEffort RespEffort { get; set; }
 
-        public VitalsEnums.RespEffort RespSounds;
+        [DataMember]
+        public VitalsEnums.RespEffort RespSounds { get; set; }
 
-        public VitalsEnums.RespEffort RespObervationMethod;
+        [DataMember]
+        public VitalsEnums.RespEffort RespObervationMethod { get; set; }
     }
 }

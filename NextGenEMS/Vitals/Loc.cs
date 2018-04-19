@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace NextGenEMS.Vitals
 {
+    [DataContract]
     public class Loc
     {
-        public VitalsEnums.LocClassification LocClassification;
+        [DataMember]
+        public VitalsEnums.LocClassification LocClassification { get; set; }
 
-        public int AlertScore;
+        [DataMember]
+        public int AlertScore { get; set; }
 
-        public string AlertnessNotes;
+        [DataMember]
+        public string AlertnessNotes{ get; set; }
     }
 }

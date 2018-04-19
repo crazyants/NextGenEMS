@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace NextGenEMS.Classes
 {
+    [DataContract]
     public class Address
     {
+        [DataMember]
+        public string Country;
+
+        [DataMember]
+        public string Street;
+
+        [DataMember]
+        public string UnitNumber;
+
+        [DataMember]
+        public string State;
+
+        [DataMember]
+        public string ZipCode;
     }
 }
