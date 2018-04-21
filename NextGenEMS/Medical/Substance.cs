@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace NextGenEMS.Medical
 {
-    class Substance
+    public class Substance
     {
+
     }
 }

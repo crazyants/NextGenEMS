@@ -8,5 +8,6 @@ namespace NextGenEMS.Backend
 {
     class Program
     {
+
     }
 }

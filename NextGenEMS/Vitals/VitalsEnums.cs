@@ -19,7 +19,6 @@
             Brachial,
             Apical,
             Femoral,
-
         };
 
         public enum MeasurementTime
