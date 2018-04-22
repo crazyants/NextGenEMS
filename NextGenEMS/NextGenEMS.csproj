@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NextGenEMS.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,10 +58,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Backend\Program.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Event.cs" />
-    <Compile Include="Frontend\ePcrEditor.cs" />
+    <Compile Include="Frontend\PatientInfoEditor.xaml.cs">
+      <DependentUpon>PatientInfoEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Medical\Condition.cs" />
     <Compile Include="Medical\MedicalEnums.cs" />
     <Compile Include="Medical\Substance.cs" />
@@ -72,6 +76,10 @@
     <Compile Include="Vitals\Respirations.cs" />
     <Compile Include="Vitals\Temperature.cs" />
     <Compile Include="Vitals\VitalsEnums.cs" />
+    <Page Include="Frontend\PatientInfoEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -26,8 +26,5 @@ namespace NextGenEMS.Vitals
 
         [DataMember]
         public Temperature Temperature { get; set; }
-
-        [DataMember]
-        public string VitalsNotes { get; set; }
     }
 }

@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="ePCR_Editor_Button" Content="Launch ePCR Editor" HorizontalAlignment="Left" Margin="154,124,0,0" VerticalAlignment="Top" Width="234" Click="Button_Click" Height="73" Background="#FF5990F1" FontSize="16" FontFamily="Yu Gothic UI Semibold"/>
+
     </Grid>
 </Window>

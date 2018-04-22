@@ -13,3 +13,5 @@ C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.csproj.Gene
 C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.csproj.CoreCompileInputs.cache
 C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.exe
 C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\NextGenEMS.pdb
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\Frontend\PatientInfoEditor.g.cs
+C:\Users\Ben\Source\Repos\NextGenEMS\NextGenEMS\obj\Debug\Frontend\PatientInfoEditor.baml

@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NextGenEMS.Frontend;
 
-namespace NextGenEMS
+namespace NextGenEMS.Frontend
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PatientInfoEditor.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PatientInfoEditor : Window
     {
-        public MainWindow()
+        public PatientInfoEditor()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PatientInfoEditor newWindow = new PatientInfoEditor();
-            newWindow.ShowDialog();
         }
     }
 }

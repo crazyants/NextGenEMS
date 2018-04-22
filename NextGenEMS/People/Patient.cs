@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using NextGenEMS.Classes;
 using NextGenEMS.Demographics;
@@ -9,6 +10,15 @@ namespace NextGenEMS.People
     [DataContract]
     public class Patient
     {
+        // Simple constructor
+        public Patient()
+        {
+            Allergies = new List<Allergin>();
+            CurrentMedications = new List<Medication>();
+            PastIllnesses = new List<Illness>();
+            VitalsReadings = new List<Vitals.Vitals>();
+        }
+
 
         #region Patient Demographic Info
 
