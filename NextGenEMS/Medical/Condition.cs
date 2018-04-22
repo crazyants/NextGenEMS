@@ -7,7 +7,7 @@ namespace NextGenEMS.Medical
     public class Condition
     {
         [DataMember]
-        public bool Existing;
+        public bool Existing { get; set; }
 
         [DataMember]
         public string CommonName { get; set; }

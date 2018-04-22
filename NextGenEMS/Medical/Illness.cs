@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace NextGenEMS.Medical
 {
@@ -9,7 +10,7 @@ namespace NextGenEMS.Medical
         public string CommonName { get; set; }
 
         [DataMember]
-        public string AlternateNames { get; set; }
+        public List<string> AlternateNames { get; set; }
 
         [DataMember]
         public string BriefDescription { get; set; }

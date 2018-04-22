@@ -59,6 +59,8 @@
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Event.cs" />
     <Compile Include="Frontend\ePcrEditor.cs" />
+    <Compile Include="Medical\Condition.cs" />
+    <Compile Include="Medical\MedicalEnums.cs" />
     <Compile Include="Medical\Substance.cs" />
     <Compile Include="Nemesis\ePcrGenerator.cs" />
     <Compile Include="Network\WebOps.cs" />
