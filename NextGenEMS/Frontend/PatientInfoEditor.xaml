@@ -33,7 +33,7 @@
         <Label Content="Gender" HorizontalAlignment="Left" Margin="160,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
         <Label Content="Race" HorizontalAlignment="Left" Margin="252,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
         <Label Content="Weight" HorizontalAlignment="Left" Margin="348,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <GroupBox x:Name="Demographics_Copy" Header="Patient Vitals" HorizontalAlignment="Left" Height="209" Margin="506,40,0,0" VerticalAlignment="Top" Width="395">
+        <GroupBox x:Name="Demographics_Copy" Header="Patient Vitals" HorizontalAlignment="Left" Height="215" Margin="506,40,0,0" VerticalAlignment="Top" Width="339">
             <ComboBox HorizontalAlignment="Left" Margin="91,66,0,0" VerticalAlignment="Top" Width="76"/>
         </GroupBox>
         <Label Content="Timestamp" HorizontalAlignment="Left" Margin="520,54,0,0" VerticalAlignment="Top"/>
@@ -49,7 +49,6 @@
         <TextBox HorizontalAlignment="Left" Height="22" Margin="698,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
         <Label Content="Respirations" HorizontalAlignment="Left" Margin="691,98,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="698,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-        <ComboBox HorizontalAlignment="Left" Margin="91,66,0,0" VerticalAlignment="Top" Width="76"/>
         <ComboBox HorizontalAlignment="Left" Margin="691,168,0,0" VerticalAlignment="Top" Width="76"/>
         <Label Content="Resp Effort" HorizontalAlignment="Left" Margin="691,146,0,0" VerticalAlignment="Top"/>
         <Label Content="Level of Consciousness" HorizontalAlignment="Left" Margin="690,195,0,0" VerticalAlignment="Top"/>
