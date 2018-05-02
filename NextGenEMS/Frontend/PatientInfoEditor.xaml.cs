@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NextGenEMS.Backend;
+using NextGenEMS.Data;
 using NextGenEMS.People;
 
 namespace NextGenEMS.Frontend
@@ -20,8 +22,19 @@ namespace NextGenEMS.Frontend
     /// </summary>
     public partial class PatientInfoEditor : Window
     {
+        private static Patient patient;
+
         // Standard Constructor accepting a single patient object
-        public PatientInfoEditor(Patient patient)
+        public PatientInfoEditor()
+        {        
+            // Create a new empty patient object
+            patient = new Patient();
+
+            //Initialize window
+            InitializeComponent();
+        }
+
+        public void UpdatePatientInfo()
         {
             // Populate patient demographic fields
             FirstNameTextbox.Text = patient.FirstName;
@@ -53,12 +66,31 @@ namespace NextGenEMS.Frontend
                 SP02Textbox.Text = vitalsSet.OxygenLevel.ToString();
                 RespirationsTextbox.Text = vitalsSet.Respirations.ToString();
                 RespEffortComboBox.Text = vitalsSet.RespEffort.ToString();
-                LocComboBox.Text = vitalsSet.LevelOfConsciousness.ToString();
+                LocComboBox.Text = vitalsSet.Loc.ToString();
             }
-            
+        }
 
-            //Initialize window
-            InitializeComponent();
+        private void LoadButton_Click(object sender, RoutedEventArgs e)
+        {
+            FileOps.LoadDatabase();
+            if (Database.PatientList.Count > 0)
+            {
+                patient = Database.PatientList.First();
+                UpdatePatientInfo();
+            }
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (FileOps.SaveDatabase())
+            {
+                MessageBox.Show("Success");
+            }
+            else
+            {
+                MessageBox.Show("Failed To Save Database");
+            }
+
         }
     }
 }

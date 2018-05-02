@@ -51,6 +51,10 @@
         <DatePicker x:Name="DateOfBirthDatePicker" HorizontalAlignment="Left" Margin="252,74,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="160,163,0,0" VerticalAlignment="Top" Width="85"/>
         <ComboBox x:Name="RaceComboBox" HorizontalAlignment="Left" Margin="252,163,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button x:Name="AddVitalsSetButton" Content="Add Set" HorizontalAlignment="Left" Margin="520,247,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="RemoveVitalsSetButton" Content="Remove Set" HorizontalAlignment="Left" Margin="607,247,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button x:Name="LoadButton" Content="Load " HorizontalAlignment="Left" Margin="699,304,0,0" VerticalAlignment="Top" Width="75" Click="LoadButton_Click"/>
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="779,304,0,0" VerticalAlignment="Top" Width="74" Click="SaveButton_Click"/>
 
     </Grid>
 </Window>

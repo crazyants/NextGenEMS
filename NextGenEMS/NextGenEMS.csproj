@@ -58,8 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Backend\FileOps.cs" />
+    <Compile Include="Backend\Preferences.cs" />
+    <Compile Include="Constants\ConstValues.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Event.cs" />
+    <Compile Include="Demographics\DemographicEnums.cs" />
     <Compile Include="Frontend\PatientInfoEditor.xaml.cs">
       <DependentUpon>PatientInfoEditor.xaml</DependentUpon>
     </Compile>
@@ -71,7 +75,6 @@
     <Compile Include="People\Manager.cs" />
     <Compile Include="People\Provider.cs" />
     <Compile Include="Security\CryptoEngine.cs" />
-    <Compile Include="Vitals\Loc.cs" />
     <Compile Include="Vitals\OxygenLevel.cs" />
     <Compile Include="Vitals\Respirations.cs" />
     <Compile Include="Vitals\Temperature.cs" />

@@ -12,7 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NextGenEMS.Data;
 using NextGenEMS.Frontend;
+using NextGenEMS.People;
 
 namespace NextGenEMS
 {
@@ -23,6 +25,7 @@ namespace NextGenEMS
     {
         public MainWindow()
         {
+            Database.Initalize();
             InitializeComponent();
         }
 
