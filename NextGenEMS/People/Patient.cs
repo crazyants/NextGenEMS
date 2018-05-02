@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
-using NextGenEMS.Classes;
 using NextGenEMS.Demographics;
 using NextGenEMS.Medical;
 
