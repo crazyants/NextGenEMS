@@ -85,7 +85,7 @@ namespace NextGenEMS.People
         //        <usage>Required</usage>
         /// </summary>
         [DataMember]
-        public string Gender { get; set; }
+        public DemographicEnums.Gender Gender { get; set; }
 
         /// <summary>
         //        <number>ePatient.14</number>
@@ -97,7 +97,7 @@ namespace NextGenEMS.People
         //        <usage>Required</usage>
         /// </summary>
         [DataMember]
-        public string Race { get; set; }
+        public DemographicEnums.Race Race { get; set; }
 
         /// <summary>
         //        <number>ePatient.17</number>
@@ -123,6 +123,9 @@ namespace NextGenEMS.People
         /// </summary>
         [DataMember]
         public string Age { get; set; }
+
+        [DataMember]
+        public string Weight { get; set; }
 
         [DataMember]
         public ContactInfo PatientContactInfo { get; set; }

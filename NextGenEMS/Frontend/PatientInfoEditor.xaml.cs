@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using NextGenEMS.People;
 
 namespace NextGenEMS.Frontend
 {
@@ -19,8 +20,21 @@ namespace NextGenEMS.Frontend
     /// </summary>
     public partial class PatientInfoEditor : Window
     {
-        public PatientInfoEditor()
+        // Standard Constructor accepting a single patient object
+        public PatientInfoEditor(Patient patient)
         {
+            // Populate patient demographic fields
+            FirstNameTextbox.Text = patient.FirstName;
+            LastNameTextbox.Text = patient.LastName;
+            DateOfBirthDatePicker.Text = patient.DateOfBirth;
+            AgeTextbox.Text = patient.Age;
+            StreetAddressTextbox.Text = patient.PatientHomeAddress.Street;
+            StateTextbox.Text = patient.PatientHomeAddress.State;
+            CityTextbox.Text = patient.PatientHomeAddress.City;
+            StreetAddressTextbox.Text = patient.PatientHomeAddress.ZipCode;
+            WeightTextbox.Text = patient.Weight;
+            GenderComboBox.Text = patient.Gender.ToString();
+            RaceComboBox.Text = patient.Race.ToString();
             InitializeComponent();
         }
     }

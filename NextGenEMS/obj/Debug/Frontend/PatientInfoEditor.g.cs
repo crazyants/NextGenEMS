@@ -53,70 +53,6 @@ namespace NextGenEMS.Frontend
 #line default
 #line hidden
 
-
-#line 20 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy;
-
-#line default
-#line hidden
-
-
-#line 21 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy1;
-
-#line default
-#line hidden
-
-
-#line 22 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy2;
-
-#line default
-#line hidden
-
-
-#line 27 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy3;
-
-#line default
-#line hidden
-
-
-#line 28 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy4;
-
-#line default
-#line hidden
-
-
-#line 29 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy5;
-
-#line default
-#line hidden
-
-
-#line 30 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox LastNameTextbox_Copy6;
-
-#line default
-#line hidden
-
-
-#line 36 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.GroupBox Demographics_Copy;
-
-#line default
-#line hidden
-
         private bool _contentLoaded;
 
         /// <summary>
@@ -185,6 +121,27 @@ namespace NextGenEMS.Frontend
         }
 
         internal System.Windows.Window PatientInfoWindow;
+        internal System.Windows.Controls.TextBox LastNameTextbox;
+        internal System.Windows.Controls.TextBox DateOfBirthTextbox;
+        internal System.Windows.Controls.TextBox AgeTextbox;
+        internal System.Windows.Controls.TextBox StreetAddressTextbox;
+        internal System.Windows.Controls.TextBox StateTextbox;
+        internal System.Windows.Controls.TextBox CityTextbox;
+        internal System.Windows.Controls.TextBox ZipCodeTextbox;
+        internal System.Windows.Controls.TextBox FirstNameTextbox;
+        internal System.Windows.Controls.TextBox WeightTextbox;
+        internal System.Windows.Controls.TextBox GenderTextbox;
+        internal System.Windows.Controls.TextBox RaceTextbox;
+        internal System.Windows.Controls.ComboBox PulseQuality;
+        internal System.Windows.Controls.TextBox PulseTextbox;
+        internal System.Windows.Controls.ListBox VitalsTimestampListBox;
+        internal System.Windows.Controls.TextBox BpSystolic;
+        internal System.Windows.Controls.TextBox BpDiastolic;
+        internal System.Windows.Controls.TextBox SP02Textbox;
+        internal System.Windows.Controls.TextBox RespirationsTextbox;
+        internal System.Windows.Controls.ComboBox RespEffortComboBox;
+        internal System.Windows.Controls.ComboBox LocComboBox;
+        internal System.Windows.Controls.GroupBox PatientVitalsGroupBox;
     }
 }
 

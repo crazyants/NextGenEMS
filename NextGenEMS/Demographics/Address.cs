@@ -6,18 +6,21 @@ namespace NextGenEMS.Demographics
     public class Address
     {
         [DataMember]
-        public string Country;
+        public string Country { get; set; }
 
         [DataMember]
-        public string Street;
+        public string Street { get; set; }
 
         [DataMember]
-        public string UnitNumber;
+        public string City { get; set; }
 
         [DataMember]
-        public string State;
+        public string UnitNumber { get; set; }
 
         [DataMember]
-        public string ZipCode;
+        public string State { get; set; }
+
+        [DataMember]
+        public string ZipCode { get; set; }
     }
 }
