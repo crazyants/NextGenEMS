@@ -1,5 +1,5 @@
 ﻿using System.Runtime.Serialization;
-using NextGenEMS.Classes;
+using NextGenEMS.Backend.HelperClasses;
 
 namespace NextGenEMS.Vitals
 {
@@ -16,13 +16,19 @@ namespace NextGenEMS.Vitals
         public Pulse Pulse { get; set; }
 
         [DataMember]
+        public VitalsEnums.PulseQuality PulseQuality { get; set; }
+
+        [DataMember]
         public OxygenLevel OxygenLevel { get; set; }
 
         [DataMember]
         public Respirations Respirations { get; set; }
 
         [DataMember]
-        public Loc LevelOfConsciousness { get; set; }
+        public VitalsEnums.RespEffort RespEffort { get; set; }
+
+        [DataMember]
+        public VitalsEnums.LocClassification Loc { get; set; }
 
         [DataMember]
         public Temperature Temperature { get; set; }

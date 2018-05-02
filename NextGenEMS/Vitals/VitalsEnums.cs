@@ -90,7 +90,10 @@
 
         public enum LocClassification
         {
-            Alert,
+            AlertOrientedX4,
+            AlertOrientedX3,
+            AlertOrientedX2,
+            AlertOrientedX1,
             Verbal,
             Pain,
             Unresponsive

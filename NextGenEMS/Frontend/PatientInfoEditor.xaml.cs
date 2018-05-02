@@ -35,6 +35,29 @@ namespace NextGenEMS.Frontend
             WeightTextbox.Text = patient.Weight;
             GenderComboBox.Text = patient.Gender.ToString();
             RaceComboBox.Text = patient.Race.ToString();
+
+            // Populate patient vitals
+            foreach (var vitalSet in patient.VitalsReadings)
+            {
+                VitalsTimestampListBox.Items.Add(vitalSet.Timestamp.TimeString);
+            }
+
+            if (VitalsTimestampListBox.Items.Count > 0)
+            {
+                var vitalsSet = patient.VitalsReadings.First();
+                VitalsTimestampListBox.SelectedIndex = 0;
+                PulseTextbox.Text = vitalsSet.Pulse.ToString();
+                PulseQuality.Text = vitalsSet.PulseQuality.ToString();
+                BpSystolic.Text = vitalsSet.BloodPressure.Systolic.ToString();
+                BpDiastolic.Text = vitalsSet.BloodPressure.Diastolic.ToString();
+                SP02Textbox.Text = vitalsSet.OxygenLevel.ToString();
+                RespirationsTextbox.Text = vitalsSet.Respirations.ToString();
+                RespEffortComboBox.Text = vitalsSet.RespEffort.ToString();
+                LocComboBox.Text = vitalsSet.LevelOfConsciousness.ToString();
+            }
+            
+
+            //Initialize window
             InitializeComponent();
         }
     }
