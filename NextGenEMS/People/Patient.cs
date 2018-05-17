@@ -12,10 +12,16 @@ namespace NextGenEMS.People
         // Simple constructor
         public Patient()
         {
+            // Initalize lists
             Allergies = new List<Allergin>();
             CurrentMedications = new List<Medication>();
             PastIllnesses = new List<Illness>();
             VitalsReadings = new List<Vitals.Vitals>();
+
+            // Initalize Objects
+            PatientHomeAddress = new Address();
+            PatientContactInfo = new ContactInfo();
+            PatientEmergencyContactInfo = new ContactInfo();
         }
 
 

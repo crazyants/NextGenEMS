@@ -64,7 +64,6 @@ namespace NextGenEMS.Frontend
 
         public void SavePatientInfo()
         {
-
             // Save patient demographic info
             _patient.FirstName = FirstNameTextbox.Text;
             _patient.LastName = LastNameTextbox.Text;
@@ -80,7 +79,6 @@ namespace NextGenEMS.Frontend
 
             _patient.VitalsReadings.Clear();
 
-
             var vitalsSet = new Vitals.Vitals();
             vitalsSet.Pulse.PulseRate = Int32.Parse(PulseTextbox.Text);
             vitalsSet.Pulse.PulseQuality = (VitalsEnums.PulseQuality) PulseQuality.SelectedIndex;
@@ -92,7 +90,11 @@ namespace NextGenEMS.Frontend
             vitalsSet.Loc = (VitalsEnums.LocClassification) LocComboBox.SelectedIndex;
 
             // Add the completed vitals set to the list
-            _patient.VitalsReadings.Clear();
+            _patient.VitalsReadings.Add(vitalsSet);
+
+            // Clear and add the patient to the current PatientList
+            Database.PatientList.Clear();
+            Database.PatientList.Add(_patient);
 
         }
 
