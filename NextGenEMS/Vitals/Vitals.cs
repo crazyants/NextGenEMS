@@ -6,6 +6,17 @@ namespace NextGenEMS.Vitals
     [DataContract]
     public class Vitals
     {
+        public Vitals()
+        {
+            // Initalize all objects
+            Timestamp = new Timestamp();
+            BloodPressure = new BloodPressure();
+            Pulse = new Pulse();
+            OxygenLevel = new OxygenLevel();
+            Respirations = new Respirations();
+            Temperature = new Temperature();
+        }
+
         [DataMember]
         public Timestamp Timestamp { get; set; }
 

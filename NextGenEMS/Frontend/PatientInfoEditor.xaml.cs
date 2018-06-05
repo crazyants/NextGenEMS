@@ -4,6 +4,7 @@ using NextGenEMS.Demographics;
 using NextGenEMS.People;
 using NextGenEMS.Vitals;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
@@ -42,21 +43,24 @@ namespace NextGenEMS.Frontend
             RaceComboBox.Text = _patient.Race.ToString();
 
             // Populate patient vitals
-            foreach (var vitalSet in _patient.VitalsReadings)
+            if (_patient.VitalsReadings != null)
             {
-                VitalsTimestampListBox.Items.Add(vitalSet.Timestamp.TimeString);
+                foreach (var vitalSet in _patient.VitalsReadings)
+                {
+                    VitalsTimestampListBox.Items.Add(vitalSet.Timestamp.TimeString);
+                }
             }
 
             if (VitalsTimestampListBox.Items.Count > 0)
             {
                 var vitalsSet = _patient.VitalsReadings.First();
                 VitalsTimestampListBox.SelectedIndex = 0;
-                PulseTextbox.Text = vitalsSet.Pulse.ToString();
+                PulseTextbox.Text = vitalsSet.Pulse.PulseRate.ToString();
                 PulseQuality.Text = vitalsSet.Pulse.PulseQuality.ToString();
                 BpSystolic.Text = vitalsSet.BloodPressure.Systolic.ToString();
                 BpDiastolic.Text = vitalsSet.BloodPressure.Diastolic.ToString();
-                SP02Textbox.Text = vitalsSet.OxygenLevel.ToString();
-                RespirationsTextbox.Text = vitalsSet.Respirations.ToString();
+                SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
+                RespirationsTextbox.Text = vitalsSet.Respirations.RespirationRate.ToString();
                 RespEffortComboBox.Text = vitalsSet.Respirations.RespEffort.ToString();
                 LocComboBox.Text = vitalsSet.Loc.ToString();
             }
@@ -74,20 +78,29 @@ namespace NextGenEMS.Frontend
             _patient.PatientHomeAddress.City = CityTextbox.Text;
             _patient.PatientHomeAddress.ZipCode = StreetAddressTextbox.Text;
             _patient.Weight = WeightTextbox.Text;
-            _patient.Gender = (DemographicEnums.Gender)GenderComboBox.SelectedIndex;
-            _patient.Race = (DemographicEnums.Race)RaceComboBox.SelectedIndex;
+            _patient.Gender = (DemographicEnums.Gender) GenderComboBox.SelectedIndex + 1;
+            _patient.Race = (DemographicEnums.Race) RaceComboBox.SelectedIndex + 1;
 
-            _patient.VitalsReadings.Clear();
+                _patient.VitalsReadings = new List<Vitals.Vitals>();
 
-            var vitalsSet = new Vitals.Vitals();
-            vitalsSet.Pulse.PulseRate = Int32.Parse(PulseTextbox.Text);
-            vitalsSet.Pulse.PulseQuality = (VitalsEnums.PulseQuality) PulseQuality.SelectedIndex;
-            vitalsSet.BloodPressure.Systolic = Int32.Parse(BpSystolic.Text);
-            vitalsSet.BloodPressure.Diastolic = Int32.Parse(BpDiastolic.Text);
-            vitalsSet.OxygenLevel.OxygenPercent = Int32.Parse(SP02Textbox.Text);
-            vitalsSet.Respirations.RespirationRate = Int32.Parse(RespirationsTextbox.Text);
-            vitalsSet.Respirations.RespEffort = (VitalsEnums.RespEffort) RespEffortComboBox.SelectedIndex;
-            vitalsSet.Loc = (VitalsEnums.LocClassification) LocComboBox.SelectedIndex;
+        var vitalsSet = new Vitals.Vitals();
+            vitalsSet.Pulse.PulseQuality = (VitalsEnums.PulseQuality) PulseQuality.SelectedIndex + 1;
+            vitalsSet.Respirations.RespEffort = (VitalsEnums.RespEffort) RespEffortComboBox.SelectedIndex + 1;
+            vitalsSet.Loc = (VitalsEnums.LocClassification) LocComboBox.SelectedIndex + 1;
+
+            // Attempt to parse int values from textboxes
+            try
+            {
+                vitalsSet.Pulse.PulseRate = Int32.Parse(PulseTextbox.Text);
+                vitalsSet.BloodPressure.Systolic = Int32.Parse(BpSystolic.Text);
+                vitalsSet.BloodPressure.Diastolic = Int32.Parse(BpDiastolic.Text);
+                vitalsSet.OxygenLevel.OxygenPercent = Int32.Parse(SP02Textbox.Text);
+                vitalsSet.Respirations.RespirationRate = Int32.Parse(RespirationsTextbox.Text);
+            }
+            catch (System.FormatException)
+            {
+                //TODO: Invalid format handling
+            }
 
             // Add the completed vitals set to the list
             _patient.VitalsReadings.Add(vitalsSet);

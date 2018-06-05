@@ -1,2 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfPatient i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/NextGenEMS.People" />
+<ArrayOfPatient xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/NextGenEMS.People">
+	<Patient>
+		<Age></Age>
+		<Allergies xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
+		<CurrentMedications xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
+		<DateOfBirth></DateOfBirth>
+		<Events i:nil="true" />
+		<FirstName>Ben</FirstName>
+		<Gender>Male</Gender>
+		<LastName>Lenington</LastName>
+		<LastOralIntake i:nil="true" />
+		<MiddleName i:nil="true" />
+		<Onset i:nil="true" />
+		<PastIllnesses xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
+		<PatientContactInfo xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Demographics">
+			<d3p1:FirstName i:nil="true" />
+			<d3p1:LastName i:nil="true" />
+			<d3p1:MiddleName i:nil="true" />
+		</PatientContactInfo>
+		<PatientEmergencyContactInfo xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Demographics">
+			<d3p1:FirstName i:nil="true" />
+			<d3p1:LastName i:nil="true" />
+			<d3p1:MiddleName i:nil="true" />
+		</PatientEmergencyContactInfo>
+		<PatientHomeAddress xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Demographics">
+			<d3p1:City></d3p1:City>
+			<d3p1:Country i:nil="true" />
+			<d3p1:State></d3p1:State>
+			<d3p1:Street>1122 Mount Curve</d3p1:Street>
+			<d3p1:UnitNumber i:nil="true" />
+			<d3p1:ZipCode>1122 Mount Curve</d3p1:ZipCode>
+		</PatientHomeAddress>
+		<PatientId i:nil="true" />
+		<Provocation i:nil="true" />
+		<QualityOfPain i:nil="true" />
+		<Race>White</Race>
+		<RegionAndRadiation i:nil="true" />
+		<Severity i:nil="true" />
+		<TimeSinceOnset i:nil="true" />
+		<Weight></Weight>
+	</Patient>
+</ArrayOfPatient>
