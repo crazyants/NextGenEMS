@@ -55,8 +55,8 @@ namespace NextGenEMS.Frontend
             {
                 var vitalsSet = _patient.VitalsReadings.First();
                 VitalsTimestampListBox.SelectedIndex = 0;
-                PulseTextbox.Text = vitalsSet.Pulse.PulseRate.ToString();
-                PulseQuality.Text = vitalsSet.Pulse.PulseQuality.ToString();
+                PulseRateTextbox.Text = vitalsSet.Pulse.PulseRate.ToString();
+                PulseQualityComboBox.Text = vitalsSet.Pulse.PulseQuality.ToString();
                 BpSystolic.Text = vitalsSet.BloodPressure.Systolic.ToString();
                 BpDiastolic.Text = vitalsSet.BloodPressure.Diastolic.ToString();
                 SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
@@ -132,6 +132,11 @@ namespace NextGenEMS.Frontend
             {
                 MessageBox.Show("Failed To Save Database");
             }
+
+        }
+
+        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
 
         }
     }
