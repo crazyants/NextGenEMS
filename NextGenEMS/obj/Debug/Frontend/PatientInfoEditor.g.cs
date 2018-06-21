@@ -500,6 +500,12 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox TimeTextbox;
         internal System.Windows.Controls.TextBox OpqrstClarifyingQuestionsTextbox;
         internal System.Windows.Controls.TextBox SampleClarifyingQuestionsTextbox;
+        internal System.Windows.Controls.TextBox SignsSymptomsTextbox;
+        internal System.Windows.Controls.TextBox AllergiesTextbox;
+        internal System.Windows.Controls.TextBox MedicationsTextbox;
+        internal System.Windows.Controls.TextBox PastMedicalHistoryTextbox;
+        internal System.Windows.Controls.TextBox LastOralIntakeTextbox;
+        internal System.Windows.Controls.TextBox EventsTextbox;
     }
 }
 

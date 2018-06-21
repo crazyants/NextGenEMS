@@ -73,12 +73,12 @@
         <Label Content="Time" HorizontalAlignment="Left" Margin="60,533,0,0" VerticalAlignment="Top"/>
         <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="60,579,0,0" VerticalAlignment="Top"/>
         <GroupBox x:Name="Demographics_Copy" Header="SAMPLE History" HorizontalAlignment="Left" Height="392" Margin="302,281,0,0" VerticalAlignment="Top" Width="241"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="312,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="SignsSymptomsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="AllergiesTextbox" HorizontalAlignment="Left" Height="22" Margin="312,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="MedicationsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="PastMedicalHistoryTextbox" HorizontalAlignment="Left" Height="22" Margin="312,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="LastOralIntakeTextbox" HorizontalAlignment="Left" Height="22" Margin="312,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="EventsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <TextBox x:Name="SampleClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="312,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <Label Content="Signs / Symptoms" HorizontalAlignment="Left" Margin="312,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Allergies" HorizontalAlignment="Left" Margin="312,340,0,0" VerticalAlignment="Top"/>
