@@ -58,13 +58,13 @@
         <TextBox x:Name="BoxyTempTextbox" HorizontalAlignment="Left" Height="22" Margin="776,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
         <Label Content="Body Temp" HorizontalAlignment="Left" Margin="772,53,0,0" VerticalAlignment="Top"/>
         <GroupBox x:Name="Demographics_Copy1" Header="OPQRST" HorizontalAlignment="Left" Height="392" Margin="46,281,0,0" VerticalAlignment="Top" Width="241"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="60,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox HorizontalAlignment="Left" Height="51" Margin="60,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="OnsetTextbox" HorizontalAlignment="Left" Height="22" Margin="60,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="ProvocationTextbox" HorizontalAlignment="Left" Height="22" Margin="60,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="QualityTextbox" HorizontalAlignment="Left" Height="22" Margin="60,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="RadiationTextbox" HorizontalAlignment="Left" Height="22" Margin="60,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="SeverityTextbox" HorizontalAlignment="Left" Height="22" Margin="60,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="TimeTextbox" HorizontalAlignment="Left" Height="22" Margin="60,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox x:Name="OpqrstClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="60,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
         <Label Content="Onset" HorizontalAlignment="Left" Margin="60,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Provocation" HorizontalAlignment="Left" Margin="60,340,0,0" VerticalAlignment="Top"/>
         <Label Content="Quality" HorizontalAlignment="Left" Margin="60,384,0,0" VerticalAlignment="Top"/>
@@ -79,7 +79,7 @@
         <TextBox HorizontalAlignment="Left" Height="22" Margin="312,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="312,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="312,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox HorizontalAlignment="Left" Height="51" Margin="312,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="SampleClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="312,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <Label Content="Signs / Symptoms" HorizontalAlignment="Left" Margin="312,295,0,0" VerticalAlignment="Top"/>
         <Label Content="Allergies" HorizontalAlignment="Left" Margin="312,340,0,0" VerticalAlignment="Top"/>
         <Label Content="Medications" HorizontalAlignment="Left" Margin="312,384,0,0" VerticalAlignment="Top"/>

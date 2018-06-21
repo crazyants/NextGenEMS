@@ -492,6 +492,14 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.ComboBox SkinFeelComboBox;
         internal System.Windows.Controls.ComboBox SkinTempComboBox;
         internal System.Windows.Controls.ComboBox SP02LocationComboBox;
+        internal System.Windows.Controls.TextBox OnsetTextbox;
+        internal System.Windows.Controls.TextBox ProvocationTextbox;
+        internal System.Windows.Controls.TextBox QualityTextbox;
+        internal System.Windows.Controls.TextBox RadiationTextbox;
+        internal System.Windows.Controls.TextBox SeverityTextbox;
+        internal System.Windows.Controls.TextBox TimeTextbox;
+        internal System.Windows.Controls.TextBox OpqrstClarifyingQuestionsTextbox;
+        internal System.Windows.Controls.TextBox SampleClarifyingQuestionsTextbox;
     }
 }
 
