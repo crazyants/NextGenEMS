@@ -373,7 +373,6 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox RespirationsTextbox;
         internal System.Windows.Controls.ComboBox RespEffortComboBox;
         internal System.Windows.Controls.ComboBox LocComboBox;
-        internal System.Windows.Controls.ComboBox PulseQualityComboBox;
         internal System.Windows.Controls.TextBox PulseRateTextbox;
         internal System.Windows.Controls.TextBox BpSystolicTextbox;
         internal System.Windows.Controls.TextBox BpDiastolicTextbox;
