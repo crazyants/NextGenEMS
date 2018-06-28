@@ -46,14 +46,6 @@ namespace NextGenEMS.Frontend
 #line hidden
 
 
-#line 10 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.GroupBox Demographics1;
-
-#line default
-#line hidden
-
-
 #line 31 "..\..\..\Frontend\PatientInfoEditor.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.GroupBox PatientVitalsGroupBox1;
@@ -118,30 +110,6 @@ namespace NextGenEMS.Frontend
 #line hidden
 
 
-#line 98 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ListBox VitalsTimestampListBox1_Copy;
-
-#line default
-#line hidden
-
-
-#line 99 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button AddVitalsSetButton1_Copy;
-
-#line default
-#line hidden
-
-
-#line 126 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy1;
-
-#line default
-#line hidden
-
-
 #line 129 "..\..\..\Frontend\PatientInfoEditor.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.GroupBox PatientVitalsGroupBox1_Copy1;
@@ -150,73 +118,9 @@ namespace NextGenEMS.Frontend
 #line hidden
 
 
-#line 135 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy2;
-
-#line default
-#line hidden
-
-
-#line 137 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy3;
-
-#line default
-#line hidden
-
-
 #line 138 "..\..\..\Frontend\PatientInfoEditor.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.GroupBox PatientVitalsGroupBox1_Copy3;
-
-#line default
-#line hidden
-
-
-#line 142 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy4;
-
-#line default
-#line hidden
-
-
-#line 143 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy5;
-
-#line default
-#line hidden
-
-
-#line 144 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy6;
-
-#line default
-#line hidden
-
-
-#line 151 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy7;
-
-#line default
-#line hidden
-
-
-#line 152 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy8;
-
-#line default
-#line hidden
-
-
-#line 153 "..\..\..\Frontend\PatientInfoEditor.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ComboBox LocComboBox1_Copy9;
 
 #line default
 #line hidden
@@ -457,12 +361,9 @@ namespace NextGenEMS.Frontend
 
         internal System.Windows.Window PatientInfoWindow;
         internal System.Windows.Controls.TextBox FirstNameTextbox;
-        internal System.Windows.Controls.TextBox LastNameTextbox;
-        internal System.Windows.Controls.TextBox AgeTextbox;
         internal System.Windows.Controls.TextBox StreetAddressTextbox;
         internal System.Windows.Controls.TextBox StateTextbox;
         internal System.Windows.Controls.TextBox CityTextbox;
-        internal System.Windows.Controls.TextBox ZipCodeTextbox;
         internal System.Windows.Controls.TextBox WeightTextbox;
         internal System.Windows.Controls.ListBox VitalsTimestampListBox;
         internal System.Windows.Controls.DatePicker DateOfBirthDatePicker;
@@ -506,6 +407,30 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox PastMedicalHistoryTextbox;
         internal System.Windows.Controls.TextBox LastOralIntakeTextbox;
         internal System.Windows.Controls.TextBox EventsTextbox;
+        internal System.Windows.Controls.ListBox PatientAssessmentTimestampListBox;
+        internal System.Windows.Controls.Button AddAssessmentButton;
+        internal System.Windows.Controls.TextBox ChiefComplaintTextbox;
+        internal System.Windows.Controls.ComboBox MoiNoiComboBox;
+        internal System.Windows.Controls.ComboBox CauseOfInjuryComboBox;
+        internal System.Windows.Controls.ComboBox ProviderImpressionComboBox;
+        internal System.Windows.Controls.TextBox Provider1Name;
+        internal System.Windows.Controls.TextBox Provider2Name;
+        internal System.Windows.Controls.TextBox Provider3Name;
+        internal System.Windows.Controls.ComboBox Provider1Role;
+        internal System.Windows.Controls.ComboBox Provider2Role;
+        internal System.Windows.Controls.ComboBox Provider3Role;
+        internal System.Windows.Controls.TextBox Provier1LicenseNumber;
+        internal System.Windows.Controls.TextBox Provider2LicenseNumber;
+        internal System.Windows.Controls.TextBox Provider3LicenseNumber;
+        internal System.Windows.Controls.ComboBox Provider1LicenseTypeComboBox;
+        internal System.Windows.Controls.ComboBox Provider2LicenseTypeComboBox;
+        internal System.Windows.Controls.ComboBox Provider3LicenseTypeComboBox;
+        internal System.Windows.Controls.TextBox GeneralCommentsTextbox;
+        internal System.Windows.Controls.TextBox NarrativeTextbox;
+        internal System.Windows.Controls.GroupBox Demographics1;
+        internal System.Windows.Controls.TextBox AgeTextbox;
+        internal System.Windows.Controls.TextBox ZipCodeTextbox;
+        internal System.Windows.Controls.TextBox LastNameTextbox;
     }
 }
 

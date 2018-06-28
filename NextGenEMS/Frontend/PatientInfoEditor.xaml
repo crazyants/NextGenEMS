@@ -8,26 +8,36 @@
         Title="PatientInfoEditor" Height="720" Width="1280">
     <Grid>
         <GroupBox x:Name="Demographics1" Header="Patient Demographics" HorizontalAlignment="Left" Height="173" Margin="46,35,0,0" VerticalAlignment="Top" Width="373">
-            <Label Content="Zip " HorizontalAlignment="Left" Margin="309,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
+            <Grid HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="373" Margin="0,0,-12,-1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="104*"/>
+                    <ColumnDefinition Width="269*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="LastNameTextbox" HorizontalAlignment="Left" Height="22" Margin="8.167,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Grid.Column="1"/>
+                <Label Content="First Name" HorizontalAlignment="Left" Margin="13,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
+                <Label Content="Last Name" HorizontalAlignment="Left" Margin="8.167,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="99.167,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <TextBox x:Name="AgeTextbox" HorizontalAlignment="Left" Height="22" Margin="210.167,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Grid.Column="1"/>
+                <Label Content="Age" HorizontalAlignment="Left" Margin="206.167,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <TextBox x:Name="FirstNameTextbox" HorizontalAlignment="Left" Height="21" Margin="13,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+                <DatePicker x:Name="DateOfBirthDatePicker" HorizontalAlignment="Left" Margin="100.167,27,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                <Label Content="Zip " HorizontalAlignment="Left" Margin="210,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <TextBox x:Name="StreetAddressTextbox" HorizontalAlignment="Left" Height="21" Margin="13,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+                <TextBox x:Name="StateTextbox" HorizontalAlignment="Left" Height="21" Margin="8,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Grid.Column="1"/>
+                <TextBox x:Name="CityTextbox" HorizontalAlignment="Left" Height="21" Margin="100,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
+                <Label Content="Street Address" HorizontalAlignment="Left" Margin="13,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
+                <Label Content="State" HorizontalAlignment="Left" Margin="6,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <Label Content="City" HorizontalAlignment="Left" Margin="99,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <TextBox x:Name="ZipCodeTextbox" HorizontalAlignment="Left" Height="22" Margin="210,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Grid.Column="1"/>
+                <TextBox x:Name="WeightTextbox" HorizontalAlignment="Left" Height="21" Margin="13,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
+                <Label Content="Weight" HorizontalAlignment="Left" Margin="12,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
+                <Label Content="Gender" HorizontalAlignment="Left" Margin="6,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <Label Content="Race" HorizontalAlignment="Left" Margin="100,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1"/>
+                <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="8,117,0,0" VerticalAlignment="Top" Width="85" Grid.Column="1"/>
+                <ComboBox x:Name="RaceComboBox" HorizontalAlignment="Left" Margin="100,117,0,0" VerticalAlignment="Top" Width="102" Grid.Column="1"/>
+            </Grid>
+
         </GroupBox>
-        <TextBox x:Name="LastNameTextbox" HorizontalAlignment="Left" Height="22" Margin="160,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Margin="61,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="160,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="251,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <TextBox x:Name="AgeTextbox" HorizontalAlignment="Left" Height="22" Margin="362,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <Label Content="Age" HorizontalAlignment="Left" Margin="358,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <TextBox x:Name="StreetAddressTextbox" HorizontalAlignment="Left" Height="21" Margin="61,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <TextBox x:Name="StateTextbox" HorizontalAlignment="Left" Height="21" Margin="160,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <TextBox x:Name="CityTextbox" HorizontalAlignment="Left" Height="21" Margin="252,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
-        <Label Content="Street Address" HorizontalAlignment="Left" Margin="61,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="State" HorizontalAlignment="Left" Margin="158,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="City" HorizontalAlignment="Left" Margin="251,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <TextBox x:Name="ZipCodeTextbox" HorizontalAlignment="Left" Height="22" Margin="362,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49"/>
-        <TextBox x:Name="FirstNameTextbox" HorizontalAlignment="Left" Height="21" Margin="61,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <TextBox x:Name="WeightTextbox" HorizontalAlignment="Left" Height="21" Margin="61,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-        <Label Content="Weight" HorizontalAlignment="Left" Margin="60,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="Gender" HorizontalAlignment="Left" Margin="158,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
-        <Label Content="Race" HorizontalAlignment="Left" Margin="252,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529"/>
         <GroupBox x:Name="PatientVitalsGroupBox1" Header="Patient Vitals" HorizontalAlignment="Left" Height="241" Margin="506,40,0,0" VerticalAlignment="Top" Width="711">
             <ComboBox x:Name="PulseQualityComboBox" HorizontalAlignment="Left" Margin="94,66,0,0" VerticalAlignment="Top" Width="65"/>
         </GroupBox>
@@ -48,9 +58,6 @@
         <Label Content="Resp Effort" HorizontalAlignment="Left" Margin="692,142,0,0" VerticalAlignment="Top"/>
         <Label Content="Level of Consciousness" HorizontalAlignment="Left" Margin="688,231,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="LocComboBox" HorizontalAlignment="Left" Margin="688,254,0,0" VerticalAlignment="Top" Width="130"/>
-        <DatePicker x:Name="DateOfBirthDatePicker" HorizontalAlignment="Left" Margin="252,74,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="160,163,0,0" VerticalAlignment="Top" Width="85"/>
-        <ComboBox x:Name="RaceComboBox" HorizontalAlignment="Left" Margin="252,163,0,0" VerticalAlignment="Top" Width="102"/>
         <Button x:Name="AddVitalsSetButton1" Content="Add Set" HorizontalAlignment="Left" Margin="520,241,0,0" VerticalAlignment="Top" Width="75" Height="35"/>
         <Button x:Name="RemoveVitalsSetButton1" Content="Remove Set" HorizontalAlignment="Left" Margin="607,241,0,0" VerticalAlignment="Top" Width="65" Height="35"/>
         <Button x:Name="LoadButton1" Content="Load Patient" HorizontalAlignment="Left" Margin="1088,660,0,0" VerticalAlignment="Top" Width="84" Click="LoadButton_Click" Height="27"/>
@@ -95,8 +102,8 @@
         <Label Content="PERRL Notes" HorizontalAlignment="Left" Margin="923,167,0,0" VerticalAlignment="Top"/>
         <GroupBox x:Name="PatientVitalsGroupBox1_Copy" Header="Patient Assessment" HorizontalAlignment="Left" Height="243" Margin="561,295,0,0" VerticalAlignment="Top" Width="336"/>
         <Label Content="Timestamp" HorizontalAlignment="Left" Margin="570,317,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="VitalsTimestampListBox1_Copy" HorizontalAlignment="Left" Height="160" Margin="570,339,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="AddVitalsSetButton1_Copy" Content="Add Set" HorizontalAlignment="Left" Margin="570,510,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="PatientAssessmentTimestampListBox" HorizontalAlignment="Left" Height="160" Margin="570,339,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="AddAssessmentButton" Content="Add Set" HorizontalAlignment="Left" Margin="570,510,0,0" VerticalAlignment="Top" Width="75"/>
         <Label Content="Glasgow Coma Scale" HorizontalAlignment="Left" Margin="923,53,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="BodyTempMethodComboBox" HorizontalAlignment="Left" Margin="846,79,0,0" VerticalAlignment="Top" Width="60"/>
         <Label Content="Temp Method" HorizontalAlignment="Left" Margin="841,53,0,0" VerticalAlignment="Top"/>
@@ -114,7 +121,7 @@
         <TextBox x:Name="GcsTotalScoreTextbox" HorizontalAlignment="Left" Height="20" Margin="997,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39"/>
         <ComboBox x:Name="BpLocationComboBox" HorizontalAlignment="Left" Margin="698,214,0,0" VerticalAlignment="Top" Width="60"/>
         <Label Content="BP Location" HorizontalAlignment="Left" Margin="692,190,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="650,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="ChiefComplaintTextbox" HorizontalAlignment="Left" Height="22" Margin="650,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <Label Content="Chief Complaint" HorizontalAlignment="Left" Margin="650,370,0,0" VerticalAlignment="Top"/>
         <Label Content="Pulse Location" HorizontalAlignment="Left" Margin="686,54,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="PulseLocationComboBox" HorizontalAlignment="Left" Margin="698,79,0,0" VerticalAlignment="Top" Width="60"/>
@@ -123,34 +130,34 @@
         <ComboBox x:Name="SkinTempComboBox" HorizontalAlignment="Left" Margin="845,214,0,0" VerticalAlignment="Top" Width="60"/>
         <Label Content="Skin Temp" HorizontalAlignment="Left" Margin="843,191,0,0" VerticalAlignment="Top"/>
         <Label Content="Mechanism of Injury / Nature of Illness" HorizontalAlignment="Left" Margin="650,317,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LocComboBox1_Copy1" HorizontalAlignment="Left" Margin="650,343,0,0" VerticalAlignment="Top" Width="215"/>
+        <ComboBox x:Name="MoiNoiComboBox" HorizontalAlignment="Left" Margin="650,343,0,0" VerticalAlignment="Top" Width="215"/>
         <Label Content="SPO2 Location" HorizontalAlignment="Left" Margin="836,144,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="SP02LocationComboBox" HorizontalAlignment="Left" Margin="845,168,0,0" VerticalAlignment="Top" Width="60"/>
         <GroupBox x:Name="PatientVitalsGroupBox1_Copy1" Header="Additional Info / Provider Comments" HorizontalAlignment="Left" Height="360" Margin="902,295,0,0" VerticalAlignment="Top" Width="336">
-            <TextBox HorizontalAlignment="Left" Height="122" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"/>
+            <TextBox x:Name="GeneralCommentsTextbox" HorizontalAlignment="Left" Height="122" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"/>
         </GroupBox>
-        <TextBox HorizontalAlignment="Left" Height="182" Margin="908,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="NarrativeTextbox" HorizontalAlignment="Left" Height="182" Margin="908,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" TextChanged="TextBox_TextChanged"/>
         <Label Content="Narrative" HorizontalAlignment="Left" Margin="908,438,0,0" VerticalAlignment="Top"/>
         <Label Content="Cause of Injury" HorizontalAlignment="Left" Margin="650,426,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LocComboBox1_Copy2" HorizontalAlignment="Left" Margin="650,452,0,0" VerticalAlignment="Top" Width="215"/>
+        <ComboBox x:Name="CauseOfInjuryComboBox" HorizontalAlignment="Left" Margin="650,452,0,0" VerticalAlignment="Top" Width="215"/>
         <Label Content="Provider Impression" HorizontalAlignment="Left" Margin="650,482,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LocComboBox1_Copy3" HorizontalAlignment="Left" Margin="650,508,0,0" VerticalAlignment="Top" Width="215"/>
+        <ComboBox x:Name="ProviderImpressionComboBox" HorizontalAlignment="Left" Margin="650,508,0,0" VerticalAlignment="Top" Width="215"/>
         <GroupBox x:Name="PatientVitalsGroupBox1_Copy3" Header="Medical Personel" HorizontalAlignment="Left" Height="135" Margin="561,538,0,0" VerticalAlignment="Top" Width="336"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="570,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="570,607,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="570,635,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
-        <ComboBox x:Name="LocComboBox1_Copy4" HorizontalAlignment="Left" Margin="832,581,0,0" VerticalAlignment="Top" Width="56"/>
-        <ComboBox x:Name="LocComboBox1_Copy5" HorizontalAlignment="Left" Margin="832,608,0,0" VerticalAlignment="Top" Width="56"/>
-        <ComboBox x:Name="LocComboBox1_Copy6" HorizontalAlignment="Left" Margin="832,636,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox x:Name="Provider1Name" HorizontalAlignment="Left" Height="23" Margin="570,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="Provider2Name" HorizontalAlignment="Left" Height="23" Margin="570,607,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="Provider3Name" HorizontalAlignment="Left" Height="23" Margin="570,635,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <ComboBox x:Name="Provider1Role" HorizontalAlignment="Left" Margin="832,579,0,0" VerticalAlignment="Top" Width="56"/>
+        <ComboBox x:Name="Provider2Role" HorizontalAlignment="Left" Margin="832,608,0,0" VerticalAlignment="Top" Width="56"/>
+        <ComboBox x:Name="Provider3Role" HorizontalAlignment="Left" Margin="832,636,0,0" VerticalAlignment="Top" Width="56"/>
         <Label Content="Role" HorizontalAlignment="Left" Margin="839,553,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="683,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="683,607,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="683,636,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="Provier1LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="683,579,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="Provider2LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="683,607,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="Provider3LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="683,636,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
         <Label Content="License #" HorizontalAlignment="Left" Margin="683,553,0,0" VerticalAlignment="Top"/>
         <Label Content="License Type" HorizontalAlignment="Left" Margin="756,553,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="LocComboBox1_Copy7" HorizontalAlignment="Left" Margin="763,579,0,0" VerticalAlignment="Top" Width="61"/>
-        <ComboBox x:Name="LocComboBox1_Copy8" HorizontalAlignment="Left" Margin="763,608,0,0" VerticalAlignment="Top" Width="61"/>
-        <ComboBox x:Name="LocComboBox1_Copy9" HorizontalAlignment="Left" Margin="763,636,0,0" VerticalAlignment="Top" Width="61"/>
+        <ComboBox x:Name="Provider1LicenseTypeComboBox" HorizontalAlignment="Left" Margin="763,579,0,0" VerticalAlignment="Top" Width="61"/>
+        <ComboBox x:Name="Provider2LicenseTypeComboBox" HorizontalAlignment="Left" Margin="763,608,0,0" VerticalAlignment="Top" Width="61"/>
+        <ComboBox x:Name="Provider3LicenseTypeComboBox" HorizontalAlignment="Left" Margin="763,636,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Full Legal Name" HorizontalAlignment="Left" Margin="570,555,0,0" VerticalAlignment="Top"/>
 
     </Grid>
