@@ -90,40 +90,47 @@
                 <Label Content="Skin Temp" HorizontalAlignment="Left" Margin="330,134,0,0" VerticalAlignment="Top"/>
                 <Label Content="SPO2 Location" HorizontalAlignment="Left" Margin="323,87,0,0" VerticalAlignment="Top"/>
                 <ComboBox x:Name="SP02LocationComboBox" HorizontalAlignment="Left" Margin="332,111,0,0" VerticalAlignment="Top" Width="60"/>
+                <ComboBox x:Name="PulseQualityComboBox" HorizontalAlignment="Left" Margin="93,72,0,0" VerticalAlignment="Top" Width="66"/>
             </Grid>
         </GroupBox>
         <Button x:Name="LoadButton1" Content="Load Patient" HorizontalAlignment="Left" Margin="1088,660,0,0" VerticalAlignment="Top" Width="84" Click="LoadButton_Click" Height="27"/>
         <Button x:Name="SaveButton1" Content="Save Database" HorizontalAlignment="Left" Margin="1177,660,0,0" VerticalAlignment="Top" Width="88" Click="SaveButton_Click" Height="27"/>
-        <GroupBox x:Name="Demographics_Copy1" Header="OPQRST" HorizontalAlignment="Left" Height="392" Margin="46,281,0,0" VerticalAlignment="Top" Width="241"/>
-        <TextBox x:Name="OnsetTextbox" HorizontalAlignment="Left" Height="22" Margin="60,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="ProvocationTextbox" HorizontalAlignment="Left" Height="22" Margin="60,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="QualityTextbox" HorizontalAlignment="Left" Height="22" Margin="60,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="RadiationTextbox" HorizontalAlignment="Left" Height="22" Margin="60,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="SeverityTextbox" HorizontalAlignment="Left" Height="22" Margin="60,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="TimeTextbox" HorizontalAlignment="Left" Height="22" Margin="60,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <TextBox x:Name="OpqrstClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="60,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
-        <Label Content="Onset" HorizontalAlignment="Left" Margin="60,295,0,0" VerticalAlignment="Top"/>
-        <Label Content="Provocation" HorizontalAlignment="Left" Margin="60,340,0,0" VerticalAlignment="Top"/>
-        <Label Content="Quality" HorizontalAlignment="Left" Margin="60,384,0,0" VerticalAlignment="Top"/>
-        <Label Content="Radiation" HorizontalAlignment="Left" Margin="60,437,0,0" VerticalAlignment="Top"/>
-        <Label Content="Severity" HorizontalAlignment="Left" Margin="60,486,0,0" VerticalAlignment="Top"/>
-        <Label Content="Time" HorizontalAlignment="Left" Margin="60,533,0,0" VerticalAlignment="Top"/>
-        <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="60,579,0,0" VerticalAlignment="Top"/>
-        <GroupBox x:Name="Demographics_Copy" Header="SAMPLE History" HorizontalAlignment="Left" Height="392" Margin="302,281,0,0" VerticalAlignment="Top" Width="241"/>
-        <TextBox x:Name="SignsSymptomsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="AllergiesTextbox" HorizontalAlignment="Left" Height="22" Margin="312,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="MedicationsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="PastMedicalHistoryTextbox" HorizontalAlignment="Left" Height="22" Margin="312,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="LastOralIntakeTextbox" HorizontalAlignment="Left" Height="22" Margin="312,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="EventsTextbox" HorizontalAlignment="Left" Height="22" Margin="312,559,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="SampleClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="312,605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <Label Content="Signs / Symptoms" HorizontalAlignment="Left" Margin="312,295,0,0" VerticalAlignment="Top"/>
-        <Label Content="Allergies" HorizontalAlignment="Left" Margin="312,340,0,0" VerticalAlignment="Top"/>
-        <Label Content="Medications" HorizontalAlignment="Left" Margin="312,384,0,0" VerticalAlignment="Top"/>
-        <Label Content="Past Medical History" HorizontalAlignment="Left" Margin="312,437,0,0" VerticalAlignment="Top"/>
-        <Label Content="Last Oral Intake" HorizontalAlignment="Left" Margin="312,486,0,0" VerticalAlignment="Top"/>
-        <Label Content="Events" HorizontalAlignment="Left" Margin="312,533,0,0" VerticalAlignment="Top"/>
-        <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="312,579,0,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="Demographics_Copy1" Header="OPQRST" HorizontalAlignment="Left" Height="392" Margin="46,281,0,0" VerticalAlignment="Top" Width="241">
+            <Grid HorizontalAlignment="Left" Height="382" Margin="10,0,-2,-13" VerticalAlignment="Top" Width="221">
+                <TextBox x:Name="OnsetTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="ProvocationTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="QualityTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="RadiationTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="SeverityTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="TimeTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <TextBox x:Name="OpqrstClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="-10,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+                <Label Content="Onset" HorizontalAlignment="Left" Margin="-10,4,0,0" VerticalAlignment="Top"/>
+                <Label Content="Provocation" HorizontalAlignment="Left" Margin="-10,49,0,0" VerticalAlignment="Top"/>
+                <Label Content="Quality" HorizontalAlignment="Left" Margin="-10,93,0,0" VerticalAlignment="Top"/>
+                <Label Content="Radiation" HorizontalAlignment="Left" Margin="-10,146,0,0" VerticalAlignment="Top"/>
+                <Label Content="Severity" HorizontalAlignment="Left" Margin="-10,195,0,0" VerticalAlignment="Top"/>
+                <Label Content="Time" HorizontalAlignment="Left" Margin="-10,242,0,0" VerticalAlignment="Top"/>
+                <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="-10,288,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="Demographics_Copy" Header="SAMPLE History" HorizontalAlignment="Left" Height="392" Margin="302,281,0,0" VerticalAlignment="Top" Width="241">
+            <Grid HorizontalAlignment="Left" Height="385" Margin="0,-12,-12,-4" VerticalAlignment="Top" Width="241">
+                <TextBox x:Name="SignsSymptomsTextbox" HorizontalAlignment="Left" Height="22" Margin="9,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="AllergiesTextbox" HorizontalAlignment="Left" Height="22" Margin="9,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="MedicationsTextbox" HorizontalAlignment="Left" Height="22" Margin="9,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="PastMedicalHistoryTextbox" HorizontalAlignment="Left" Height="22" Margin="9,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="LastOralIntakeTextbox" HorizontalAlignment="Left" Height="22" Margin="9,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="EventsTextbox" HorizontalAlignment="Left" Height="22" Margin="9,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <TextBox x:Name="SampleClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="9,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+                <Label Content="Signs / Symptoms" HorizontalAlignment="Left" Margin="9,14,0,0" VerticalAlignment="Top"/>
+                <Label Content="Allergies" HorizontalAlignment="Left" Margin="9,59,0,0" VerticalAlignment="Top"/>
+                <Label Content="Medications" HorizontalAlignment="Left" Margin="9,103,0,0" VerticalAlignment="Top"/>
+                <Label Content="Past Medical History" HorizontalAlignment="Left" Margin="9,156,0,0" VerticalAlignment="Top"/>
+                <Label Content="Last Oral Intake" HorizontalAlignment="Left" Margin="9,205,0,0" VerticalAlignment="Top"/>
+                <Label Content="Events" HorizontalAlignment="Left" Margin="9,252,0,0" VerticalAlignment="Top"/>
+                <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="9,298,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
         <GroupBox x:Name="PatientVitalsGroupBox1_Copy" Header="Patient Assessment" HorizontalAlignment="Left" Height="243" Margin="561,295,0,0" VerticalAlignment="Top" Width="336"/>
         <Label Content="Timestamp" HorizontalAlignment="Left" Margin="570,317,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="PatientAssessmentTimestampListBox" HorizontalAlignment="Left" Height="160" Margin="570,339,0,0" VerticalAlignment="Top" Width="75"/>

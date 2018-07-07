@@ -430,6 +430,7 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox AgeTextbox;
         internal System.Windows.Controls.TextBox ZipCodeTextbox;
         internal System.Windows.Controls.TextBox LastNameTextbox;
+        internal System.Windows.Controls.ComboBox PulseQualityComboBox;
     }
 }
 
