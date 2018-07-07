@@ -42,7 +42,7 @@ namespace NextGenEMS.Frontend
             GenderComboBox.Text = _patient.Gender.ToString();
             RaceComboBox.Text = _patient.Race.ToString();
 
-            // Populate patient vitals
+            // Populate patient vitals timestamps
             if (_patient.VitalsReadings != null)
             {
                 foreach (var vitalSet in _patient.VitalsReadings)
@@ -51,18 +51,27 @@ namespace NextGenEMS.Frontend
                 }
             }
 
+            // Populate patient vitals fields
             if (VitalsTimestampListBox.Items.Count > 0)
             {
-                var vitalsSet = _patient.VitalsReadings.First();
-                VitalsTimestampListBox.SelectedIndex = 0;
-                PulseRateTextbox.Text = vitalsSet.Pulse.PulseRate.ToString();
-                PulseQualityComboBox.Text = vitalsSet.Pulse.PulseQuality.ToString();
-                BpSystolic.Text = vitalsSet.BloodPressure.Systolic.ToString();
-                BpDiastolic.Text = vitalsSet.BloodPressure.Diastolic.ToString();
-                SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
-                RespirationsTextbox.Text = vitalsSet.Respirations.RespirationRate.ToString();
-                RespEffortComboBox.Text = vitalsSet.Respirations.RespEffort.ToString();
-                LocComboBox.Text = vitalsSet.Loc.ToString();
+                if (_patient.VitalsReadings != null)
+                {
+                    var vitalsSet = _patient.VitalsReadings.First();
+                    VitalsTimestampListBox.SelectedIndex = 0;
+                    PulseRateTextbox.Text = vitalsSet.Pulse.PulseRate.ToString();
+                    PulseQualityComboBox.Text = vitalsSet.Pulse.PulseQuality.ToString();
+                    BpSystolicTextbox.Text = vitalsSet.BloodPressure.Systolic.ToString();
+                    BpDiastolicTextbox.Text = vitalsSet.BloodPressure.Diastolic.ToString();
+                    PulseLocationComboBox.Text = vitalsSet.Pulse.PulsePoint.ToString();
+                    RespirationsTextbox.Text = vitalsSet.Respirations.RespirationRate.ToString();
+                    RespEffortComboBox.Text = vitalsSet.Respirations.RespEffort.ToString();
+                    BpLocationComboBox.Text = vitalsSet.BloodPressure.BpReadingLocation.ToString();
+                    BodyTempTextbox.Text = vitalsSet.Temperature.ReadingValue.ToString();
+                    BloodGcTextbox.Text = vitalsSet.BloodGlucose.Value.ToString();
+                    SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
+                    
+                    LocComboBox.Text = vitalsSet.Loc.ToString();
+                }
             }
         }
 

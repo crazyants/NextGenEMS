@@ -376,7 +376,6 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox PulseRateTextbox;
         internal System.Windows.Controls.TextBox BpSystolicTextbox;
         internal System.Windows.Controls.TextBox BpDiastolicTextbox;
-        internal System.Windows.Controls.TextBox BoxyTempTextbox;
         internal System.Windows.Controls.TextBox BloodGcTextbox;
         internal System.Windows.Controls.ComboBox PupilResponseComboBox;
         internal System.Windows.Controls.TextBox PERRLNotesTextbox;
@@ -428,9 +427,20 @@ namespace NextGenEMS.Frontend
         internal System.Windows.Controls.TextBox NarrativeTextbox;
         internal System.Windows.Controls.GroupBox Demographics1;
         internal System.Windows.Controls.TextBox AgeTextbox;
-        internal System.Windows.Controls.TextBox ZipCodeTextbox;
         internal System.Windows.Controls.TextBox LastNameTextbox;
         internal System.Windows.Controls.ComboBox PulseQualityComboBox;
+        internal System.Windows.Controls.GroupBox Demographics1_Copy;
+        internal System.Windows.Controls.TextBox LastNameTextbox1;
+        internal System.Windows.Controls.TextBox AgeTextbox1;
+        internal System.Windows.Controls.TextBox FirstNameTextbox1;
+        internal System.Windows.Controls.DatePicker DateOfBirthDatePicker1;
+        internal System.Windows.Controls.TextBox StreetAddressTextbox1;
+        internal System.Windows.Controls.TextBox StateTextbox1;
+        internal System.Windows.Controls.TextBox CityTextbox1;
+        internal System.Windows.Controls.TextBox WeightTextbox1;
+        internal System.Windows.Controls.ComboBox GenderComboBox1;
+        internal System.Windows.Controls.ComboBox RaceComboBox1;
+        internal System.Windows.Controls.TextBox BodyTempTextbox;
     }
 }
 

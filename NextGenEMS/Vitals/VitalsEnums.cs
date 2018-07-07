@@ -120,5 +120,43 @@
         }
 
         #endregion
+
+        #region Skin
+
+        public enum SkinTemp
+        {
+            Cold,
+            Cool,
+            Normal,
+            Warm,
+            Hot
+        }
+
+        public enum SkinColor
+        {
+            Pink,
+            Normal,
+            Grey,
+            BlueTint,
+            Pale,
+        }
+
+        public enum SkinMoisture
+        {
+            Dry,
+            Normal,
+            Moist,
+            Clammy,
+            Wet,
+            Sweating
+        }
+
+        #endregion
+
+        public enum BloodGlucoseReadingLocation
+        {
+            LeftHand,
+            RightHand
+        }
     }
 }

@@ -24,6 +24,9 @@ namespace NextGenEMS.Vitals
         public BloodPressure BloodPressure { get; set; }
 
         [DataMember]
+        public BloodGlucose BloodGlucose { get; set; }
+
+        [DataMember]
         public Pulse Pulse { get; set; }
 
 
