@@ -158,5 +158,17 @@
             LeftHand,
             RightHand
         }
+
+        public enum Pupils
+        {
+            Dialated,
+            Constricted,
+            Unequal,
+            DelayedTracking,
+            NoTracking,
+            Bloodshot,
+            EyeDamage,
+            Perrl,
+        }
     }
 }

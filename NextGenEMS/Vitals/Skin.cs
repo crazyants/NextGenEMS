@@ -10,12 +10,12 @@ namespace NextGenEMS.Vitals
     public class Skin
     {
         [DataMember]
-        public VitalsEnums.MeasurementTime MeasurementTime { get; set; }
+        public VitalsEnums.SkinColor SkinColor { get; set; }
 
         [DataMember]
-        public VitalsEnums.PulseQuality PulseQuality { get; set; }
+        public VitalsEnums.SkinTemp SkinTemp { get; set; }
 
         [DataMember]
-        public VitalsEnums.PulseQuality PulsePoint { get; set; }
+        public VitalsEnums.SkinMoisture SkinMoisture { get; set; }
     }
 }

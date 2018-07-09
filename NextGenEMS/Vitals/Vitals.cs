@@ -29,6 +29,11 @@ namespace NextGenEMS.Vitals
         [DataMember]
         public Pulse Pulse { get; set; }
 
+        [DataMember]
+        public Skin Skin { get; set; }
+
+        [DataMember]
+        public Pupils Pupils { get; set; }
 
         [DataMember]
         public OxygenLevel OxygenLevel { get; set; }
@@ -41,5 +46,8 @@ namespace NextGenEMS.Vitals
 
         [DataMember]
         public Temperature Temperature { get; set; }
+
+        [DataMember]
+        public Gcs Gcs { get; set; }
     }
 }

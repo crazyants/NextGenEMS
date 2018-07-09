@@ -67,10 +67,16 @@ namespace NextGenEMS.Frontend
                     RespEffortComboBox.Text = vitalsSet.Respirations.RespEffort.ToString();
                     BpLocationComboBox.Text = vitalsSet.BloodPressure.BpReadingLocation.ToString();
                     BodyTempTextbox.Text = vitalsSet.Temperature.ReadingValue.ToString();
+                    BodyTempMethodComboBox.Text = vitalsSet.Temperature.Location.ToString();
                     BloodGcTextbox.Text = vitalsSet.BloodGlucose.Value.ToString();
+                    GcMethodComboBox.Text = vitalsSet.BloodGlucose.BpReadingMethod.ToString();
                     SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
-                    
+                    SP02LocationComboBox.Text = vitalsSet.OxygenLevel.OxygenReadingMethod.ToString();
+                    SkinFeelComboBox.Text = vitalsSet.Skin.SkinMoisture.ToString();
+                    SkinTempComboBox.Text = vitalsSet.Skin.SkinTemp.ToString();              
                     LocComboBox.Text = vitalsSet.Loc.ToString();
+                    PupilResponseComboBox.Text = vitalsSet.Pupils.Type.ToString();
+                    PERRLNotesTextbox.Text = vitalsSet.Pupils.Notes;
                 }
             }
         }
