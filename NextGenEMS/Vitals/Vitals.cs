@@ -49,5 +49,8 @@ namespace NextGenEMS.Vitals
 
         [DataMember]
         public Gcs Gcs { get; set; }
+
+        [DataMember]
+        public string Notes { get; set; }
     }
 }

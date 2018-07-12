@@ -77,8 +77,24 @@ namespace NextGenEMS.Frontend
                     LocComboBox.Text = vitalsSet.Loc.ToString();
                     PupilResponseComboBox.Text = vitalsSet.Pupils.Type.ToString();
                     PERRLNotesTextbox.Text = vitalsSet.Pupils.Notes;
+                    GcsMotorScoreTextbox.Text = vitalsSet.Gcs.MotorScore.ToString();
+                    GcsVerbalScoreTextbox.Text = vitalsSet.Gcs.VerbalScore.ToString();
+                    GcsVisualScoreTextbox.Text = vitalsSet.Gcs.VisualScore.ToString();
+                    GcsVisualScoreTextbox.Text = vitalsSet.Gcs.TotalScore.ToString();
+                    ProviderNotesTextbox.Text = vitalsSet.Notes;
                 }
             }
+
+            // Populate OPQRST fields
+            OnsetTextbox.Text = _patient.Opqrst.Onset;
+            ProvocationTextbox.Text = _patient.Opqrst.Provocation;
+            QualityTextbox.Text = _patient.Opqrst.QualityOfPain;
+            RadiationTextbox.Text = _patient.Opqrst.RegionAndRadiation;
+            SeverityTextbox.Text = _patient.Opqrst.Severity;
+            TimeTextbox.Text = _patient.Opqrst.TimeSinceOnset;
+            OpqrstClarifyingQuestionsTextbox.Text = _patient.Opqrst.ClarifyingQuestions;
+
+
         }
 
         public void SavePatientInfo()

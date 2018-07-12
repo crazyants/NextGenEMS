@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using NextGenEMS.Demographics;
 using NextGenEMS.Medical;
+using NextGenEMS.Vitals;
 
 namespace NextGenEMS.People
 {
@@ -161,27 +162,8 @@ namespace NextGenEMS.People
 
         #endregion
 
-        #region OPQRST Info
-
         [DataMember]
-        public string Onset { get; set; }
-
-        [DataMember]
-        public string Provocation { get; set; }
-
-        [DataMember]
-        public string QualityOfPain { get; set; }
-
-        [DataMember]
-        public string RegionAndRadiation { get; set; }
-
-        [DataMember]
-        public string Severity { get; set; }
-
-        [DataMember]
-        public string TimeSinceOnset { get; set; }
-
-        #endregion
+        public Opqrst Opqrst { get; set; }
 
         public List<Vitals.Vitals> VitalsReadings { get; set; }
     }
