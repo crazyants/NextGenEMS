@@ -75,8 +75,13 @@
     <Compile Include="People\Manager.cs" />
     <Compile Include="People\Provider.cs" />
     <Compile Include="Security\CryptoEngine.cs" />
+    <Compile Include="Vitals\BloodGlucose.cs" />
+    <Compile Include="Vitals\Gcs.cs" />
+    <Compile Include="Vitals\Opqrst.cs" />
     <Compile Include="Vitals\OxygenLevel.cs" />
+    <Compile Include="Vitals\Pupils.cs" />
     <Compile Include="Vitals\Respirations.cs" />
+    <Compile Include="Vitals\Skin.cs" />
     <Compile Include="Vitals\Temperature.cs" />
     <Compile Include="Vitals\VitalsEnums.cs" />
     <Page Include="Frontend\PatientInfoEditor.xaml">

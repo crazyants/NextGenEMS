@@ -104,10 +104,10 @@
                 <TextBox x:Name="OpqrstClarifyingQuestionsTextbox" HorizontalAlignment="Left" Height="51" Margin="-10,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
                 <Label Content="Onset" HorizontalAlignment="Left" Margin="-10,4,0,0" VerticalAlignment="Top"/>
                 <Label Content="Provocation" HorizontalAlignment="Left" Margin="-10,49,0,0" VerticalAlignment="Top"/>
-                <Label Content="Quality" HorizontalAlignment="Left" Margin="-10,93,0,0" VerticalAlignment="Top"/>
-                <Label Content="Radiation" HorizontalAlignment="Left" Margin="-10,146,0,0" VerticalAlignment="Top"/>
+                <Label Content="Quality of Pain / Discomfort" HorizontalAlignment="Left" Margin="-10,93,0,0" VerticalAlignment="Top"/>
+                <Label Content="Radiation / Region" HorizontalAlignment="Left" Margin="-10,146,0,0" VerticalAlignment="Top"/>
                 <Label Content="Severity" HorizontalAlignment="Left" Margin="-10,195,0,0" VerticalAlignment="Top"/>
-                <Label Content="Time" HorizontalAlignment="Left" Margin="-10,242,0,0" VerticalAlignment="Top"/>
+                <Label Content="Time (Since Onset)" HorizontalAlignment="Left" Margin="-10,242,0,0" VerticalAlignment="Top"/>
                 <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="-10,288,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
