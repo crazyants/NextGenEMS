@@ -73,7 +73,7 @@ namespace NextGenEMS.Frontend
                     SP02Textbox.Text = vitalsSet.OxygenLevel.OxygenPercent.ToString();
                     SP02LocationComboBox.Text = vitalsSet.OxygenLevel.OxygenReadingMethod.ToString();
                     SkinFeelComboBox.Text = vitalsSet.Skin.SkinMoisture.ToString();
-                    SkinTempComboBox.Text = vitalsSet.Skin.SkinTemp.ToString();              
+                    SkinTempComboBox.Text = vitalsSet.Skin.SkinTemp.ToString();
                     LocComboBox.Text = vitalsSet.Loc.ToString();
                     PupilResponseComboBox.Text = vitalsSet.Pupils.Type.ToString();
                     PERRLNotesTextbox.Text = vitalsSet.Pupils.Notes;
@@ -94,7 +94,7 @@ namespace NextGenEMS.Frontend
             TimeTextbox.Text = _patient.Opqrst.TimeSinceOnset;
             OpqrstClarifyingQuestionsTextbox.Text = _patient.Opqrst.ClarifyingQuestions;
 
-            // Populate SAMPLE
+            // Populate patient SAMPLE history fields
             SignsSymptomsTextbox.Text = _patient.SignsAndSymptoms;
             AllergiesTextbox.Text = _patient.Allergies.ToString();
             MedicationsTextbox.Text = _patient.CurrentMedications.ToString();
@@ -103,6 +103,21 @@ namespace NextGenEMS.Frontend
             EventsTextbox.Text = _patient.Events;
             SignsSymptomsTextbox.Text = _patient.SignsAndSymptoms;
             SampleClarifyingQuestionsTextbox.Text = _patient.SampleClarifyingQuestions;
+
+            // Populate additional Patient Assessment info fields
+            if (_patient.MoiOrNoi)
+            {
+                MoiNoiComboBox.Text = "MOI";
+            }
+            else
+            {
+                MoiNoiComboBox.Text = "NOI";
+            }
+
+            MoiNoiDescriptionTextbox.Text = _patient.MoiNoiDescription;
+            ChiefComplaintTextbox.Text = _patient.ChiefComplaint;
+            CauseOfInjuryComboBox.Text = _patient.CauseOfInjury;
+            ProviderNotesTextbox.Text = _patient.ProviderImpression;
         }
 
         public void SavePatientInfo()

@@ -137,11 +137,12 @@
                 <TextBox x:Name="ChiefComplaintTextbox" HorizontalAlignment="Left" Height="22" Margin="77,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
                 <Label Content="Chief Complaint" HorizontalAlignment="Left" Margin="77,44,0,0" VerticalAlignment="Top"/>
                 <Label Content="Mechanism of Injury / Nature of Illness" HorizontalAlignment="Left" Margin="77,-8,0,0" VerticalAlignment="Top"/>
-                <ComboBox x:Name="MoiNoiComboBox" HorizontalAlignment="Left" Margin="77,18,0,0" VerticalAlignment="Top" Width="215"/>
+                <ComboBox x:Name="MoiNoiComboBox" HorizontalAlignment="Left" Margin="77,18,0,0" VerticalAlignment="Top" Width="65"/>
                 <Label Content="Cause of Injury" HorizontalAlignment="Left" Margin="77,100,0,0" VerticalAlignment="Top"/>
                 <ComboBox x:Name="CauseOfInjuryComboBox" HorizontalAlignment="Left" Margin="77,126,0,0" VerticalAlignment="Top" Width="215"/>
                 <Label Content="Provider Impression" HorizontalAlignment="Left" Margin="77,156,0,0" VerticalAlignment="Top"/>
                 <ComboBox x:Name="ProviderImpressionComboBox" HorizontalAlignment="Left" Margin="77,182,0,0" VerticalAlignment="Top" Width="215"/>
+                <TextBox x:Name="MoiNoiDescriptionTextbox" HorizontalAlignment="Left" Height="22" Margin="147,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
             </Grid>
         </GroupBox>
         <TextBox x:Name="ProviderNotesTextbox" HorizontalAlignment="Left" Height="199" Margin="1048,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>

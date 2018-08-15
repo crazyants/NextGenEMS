@@ -1111,6 +1111,7 @@ namespace NextGenEMS.Frontend
         }
 
         internal System.Windows.Window PatientInfoWindow;
+        internal System.Windows.Controls.TextBox MoiNoiDescriptionTextbox;
     }
 }
 

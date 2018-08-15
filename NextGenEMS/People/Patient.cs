@@ -25,6 +25,8 @@ namespace NextGenEMS.People
             PatientEmergencyContactInfo = new ContactInfo();
         }
 
+        [DataMember]
+        public List<Vitals.Vitals> VitalsReadings { get; set; }
 
         #region Patient Demographic Info
 
@@ -165,9 +167,31 @@ namespace NextGenEMS.People
 
         #endregion
 
+        #region  Additional Patient Assessment info
+
         [DataMember]
         public Opqrst Opqrst { get; set; }
 
-        public List<Vitals.Vitals> VitalsReadings { get; set; }
+        [DataMember]
+        public bool MoiOrNoi { get; set; }
+
+        [DataMember]
+        public string MoiNoiDescription { get; set; }
+
+        [DataMember]
+        public string ChiefComplaint { get; set; }
+
+        [DataMember]
+        public string CauseOfInjury { get; set; }
+
+        [DataMember]
+        public string ProviderImpression { get; set; }
+        
+
+        #endregion 
+
+        
+
+        
     }
 }
