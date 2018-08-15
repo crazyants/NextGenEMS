@@ -160,6 +160,9 @@ namespace NextGenEMS.People
         [DataMember]
         public string Events { get; set; }
 
+        [DataMember]
+        public string SampleClarifyingQuestions { get; set; }
+
         #endregion
 
         [DataMember]

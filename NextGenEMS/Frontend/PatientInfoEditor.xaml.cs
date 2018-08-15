@@ -94,7 +94,15 @@ namespace NextGenEMS.Frontend
             TimeTextbox.Text = _patient.Opqrst.TimeSinceOnset;
             OpqrstClarifyingQuestionsTextbox.Text = _patient.Opqrst.ClarifyingQuestions;
 
-
+            // Populate SAMPLE
+            SignsSymptomsTextbox.Text = _patient.SignsAndSymptoms;
+            AllergiesTextbox.Text = _patient.Allergies.ToString();
+            MedicationsTextbox.Text = _patient.CurrentMedications.ToString();
+            PastMedicalHistoryTextbox.Text = _patient.PastIllnesses.ToString();
+            LastOralIntakeTextbox.Text = _patient.LastOralIntake;
+            EventsTextbox.Text = _patient.Events;
+            SignsSymptomsTextbox.Text = _patient.SignsAndSymptoms;
+            SampleClarifyingQuestionsTextbox.Text = _patient.SampleClarifyingQuestions;
         }
 
         public void SavePatientInfo()
