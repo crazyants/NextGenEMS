@@ -36,6 +36,9 @@
   <PropertyGroup>
     <StartupObject>NextGenEMS.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Original Logo %28Transparent%29.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -59,11 +62,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Backend\FileOps.cs" />
+    <Compile Include="Backend\HelperClasses\GetStringValue.cs" />
     <Compile Include="Backend\Preferences.cs" />
     <Compile Include="Constants\ConstValues.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\Event.cs" />
     <Compile Include="Demographics\DemographicEnums.cs" />
+    <Compile Include="EMS\EmsEnums.cs" />
+    <Compile Include="EMS\License.cs" />
     <Compile Include="Frontend\PatientInfoEditor.xaml.cs">
       <DependentUpon>PatientInfoEditor.xaml</DependentUpon>
     </Compile>
@@ -75,6 +81,7 @@
     <Compile Include="People\Manager.cs" />
     <Compile Include="People\Provider.cs" />
     <Compile Include="Security\CryptoEngine.cs" />
+    <Compile Include="Treatment\Airway.cs" />
     <Compile Include="Vitals\BloodGlucose.cs" />
     <Compile Include="Vitals\Gcs.cs" />
     <Compile Include="Vitals\Opqrst.cs" />
@@ -140,6 +147,15 @@
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="VoiceProcessing\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NextGenEMS Logo %28V1%29 %28Transparent%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NextGenEMS Logo %28V1%29 %28Transparent%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Original Logo %28Transparent%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

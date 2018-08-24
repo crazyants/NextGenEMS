@@ -15,6 +15,10 @@ namespace NextGenEMS.Vitals
             OxygenLevel = new OxygenLevel();
             Respirations = new Respirations();
             Temperature = new Temperature();
+            BloodGlucose = new BloodGlucose();
+            Skin = new Skin();
+            Pupils = new Pupils();
+            Gcs = new Gcs();
         }
 
         [DataMember]

@@ -170,5 +170,81 @@
             EyeDamage,
             Perrl,
         }
+
+        /// <summary>
+        /// NOTE: Taken directly from the Wisc Ambluence Run Template
+        /// </summary>
+        public enum CauseOfInjury
+        {
+            AthleticInjury,
+            BicycleCrash,
+            Bite,
+            ChemicalExposure,
+            ChildBatteringSuspected,
+            Drowning,
+            DrugIngestion,
+            Electrocution,
+            ExcessiveCold,
+            ExcessiveHeat,
+            Fall,
+            FireFlames,
+            FirearmSelfInflicted,
+            FirearmAccidental,
+            FirearmAssault,
+            Lightning,
+            MachineryInjury,
+            MechanicalSuffocation,
+            MotorVehicleNonTraffic,
+            MotorVehicleTraffic,
+            PedestrianTraffic,
+            PhysicalAssault,
+            PoisonNotDrugs,
+            RadiationExposure,
+            SexualAssault,
+            SmokeInhalation,
+            Stabbing,
+            StingsPlantAnimal,
+            WaterTransportIncident,
+            Unknown,
+            Other
+        }
+
+        public enum ProviderImpression
+        {
+            AbdPnProblems,
+            AirwayObstruction,
+            AllergicReaction,
+            AlteredLoc,
+            BehavioralPsych,
+            CardiacArrest,
+            CardiacRythemDisturb,
+            ChestPainDiscomfort,
+            CongestiveHeartFailure,
+            DiabeticSymptoms,
+            Electrocution,
+            GiBleed,
+            Headache,
+            Hypertension,
+            HyperthermiaFever,
+            Hyopthermia,
+            HypovolemiaShock,
+            IntoxicationSuspected,
+            ObviousDeath,
+            PoisonDrugInjection,
+            PregnancyObDelivery,
+            RespiratoryArrest,
+            RespiratoryDistress,
+            Seizure,
+            SexualAssault,
+            ToxicInhalation,
+            StingsBites,
+            Stroke,
+            SyncopeFainting,
+            TruamaticInjury,
+            VaginalHemorrhage,
+            Unknown,
+            Other
+        }
     }
 }
+

@@ -1,17 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfPatient xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/NextGenEMS.People">
 	<Patient>
+		<ActivatedCharcoal>false</ActivatedCharcoal>
 		<Age></Age>
+		<AirwayInsertion>false</AirwayInsertion>
 		<Allergies xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
+		<BleedingControl>false</BleedingControl>
+		<BurnTreatment>false</BurnTreatment>
+		<CSpine>false</CSpine>
+		<CauseOfInjury></CauseOfInjury>
+		<ChiefComplaint></ChiefComplaint>
+		<ChildbirthDelivery>false</ChildbirthDelivery>
+		<Cpr>false</Cpr>
 		<CurrentMedications xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
 		<DateOfBirth></DateOfBirth>
-		<Events i:nil="true" />
-		<FirstName>Ben</FirstName>
+		<Events>tmp3</Events>
+		<FirstName></FirstName>
 		<Gender>Male</Gender>
-		<LastName>Lenington</LastName>
-		<LastOralIntake i:nil="true" />
+		<GlucoseTreatment>false</GlucoseTreatment>
+		<LastName></LastName>
+		<LastOralIntake>tmp2</LastOralIntake>
 		<MiddleName i:nil="true" />
-		<Onset i:nil="true" />
+		<MoiNoiDescription></MoiNoiDescription>
+		<MoiOrNoi>false</MoiOrNoi>
+		<Narcan>false</Narcan>
+		<Narrative></Narrative>
+		<Nebulizer>false</Nebulizer>
+		<Opqrst xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Vitals">
+			<d3p1:ClarifyingQuestions>Fam History</d3p1:ClarifyingQuestions>
+			<d3p1:Onset>Sitting down</d3p1:Onset>
+			<d3p1:Provocation>Sudden Movement</d3p1:Provocation>
+			<d3p1:QualityOfPain>Sharp</d3p1:QualityOfPain>
+			<d3p1:RegionAndRadiation>Isolated</d3p1:RegionAndRadiation>
+			<d3p1:Severity>87/10</d3p1:Severity>
+			<d3p1:TimeSinceOnset>2 Hours</d3p1:TimeSinceOnset>
+		</Opqrst>
+		<OtherTreatment>false</OtherTreatment>
 		<PastIllnesses xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Medical" />
 		<PatientContactInfo xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Demographics">
 			<d3p1:FirstName i:nil="true" />
@@ -27,17 +51,75 @@
 			<d3p1:City></d3p1:City>
 			<d3p1:Country i:nil="true" />
 			<d3p1:State></d3p1:State>
-			<d3p1:Street>1122 Mount Curve</d3p1:Street>
+			<d3p1:Street></d3p1:Street>
 			<d3p1:UnitNumber i:nil="true" />
-			<d3p1:ZipCode>1122 Mount Curve</d3p1:ZipCode>
+			<d3p1:ZipCode></d3p1:ZipCode>
 		</PatientHomeAddress>
 		<PatientId i:nil="true" />
-		<Provocation i:nil="true" />
-		<QualityOfPain i:nil="true" />
+		<ProviderComments></ProviderComments>
+		<ProviderImpression></ProviderImpression>
+		<Providers i:nil="true" />
 		<Race>White</Race>
-		<RegionAndRadiation i:nil="true" />
-		<Severity i:nil="true" />
-		<TimeSinceOnset i:nil="true" />
+		<SampleClarifyingQuestions>tmp4</SampleClarifyingQuestions>
+		<Splint>false</Splint>
+		<VentilationTreatment>false</VentilationTreatment>
+		<VitalsReadings xmlns:d3p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Vitals">
+			<d3p1:Vitals>
+				<d3p1:BloodGlucose>
+					<d3p1:BpReadingMethod>LeftHand</d3p1:BpReadingMethod>
+					<d3p1:Value>0</d3p1:Value>
+				</d3p1:BloodGlucose>
+				<d3p1:BloodPressure>
+					<d3p1:BpReadingLocation>Manual</d3p1:BpReadingLocation>
+					<d3p1:BpReadingMethod>Manual</d3p1:BpReadingMethod>
+					<d3p1:Diastolic>0</d3p1:Diastolic>
+					<d3p1:PulseQuality>Regular</d3p1:PulseQuality>
+					<d3p1:Systolic>0</d3p1:Systolic>
+				</d3p1:BloodPressure>
+				<d3p1:Gcs>
+					<d3p1:MotorScore>0</d3p1:MotorScore>
+					<d3p1:Notes i:nil="true" />
+					<d3p1:TotalScore>0</d3p1:TotalScore>
+					<d3p1:VerbalScore>0</d3p1:VerbalScore>
+					<d3p1:VisualScore>0</d3p1:VisualScore>
+				</d3p1:Gcs>
+				<d3p1:Loc>AlertOrientedX4</d3p1:Loc>
+				<d3p1:Notes i:nil="true" />
+				<d3p1:OxygenLevel>
+					<d3p1:OxygenPercent>0</d3p1:OxygenPercent>
+					<d3p1:OxygenReadingMethod>Fingertip</d3p1:OxygenReadingMethod>
+				</d3p1:OxygenLevel>
+				<d3p1:Pulse>
+					<d3p1:MeasurementTime>FifteenSeconds</d3p1:MeasurementTime>
+					<d3p1:PulsePoint>Regular</d3p1:PulsePoint>
+					<d3p1:PulseQuality>Regular</d3p1:PulseQuality>
+					<d3p1:PulseRate>0</d3p1:PulseRate>
+				</d3p1:Pulse>
+				<d3p1:Pupils>
+					<d3p1:Notes i:nil="true" />
+					<d3p1:Type>Dialated</d3p1:Type>
+				</d3p1:Pupils>
+				<d3p1:Respirations>
+					<d3p1:RespEffort>Normal</d3p1:RespEffort>
+					<d3p1:RespObervationMethod>Normal</d3p1:RespObervationMethod>
+					<d3p1:RespSounds>Normal</d3p1:RespSounds>
+					<d3p1:RespirationRate>0</d3p1:RespirationRate>
+				</d3p1:Respirations>
+				<d3p1:Skin>
+					<d3p1:SkinColor>Pink</d3p1:SkinColor>
+					<d3p1:SkinMoisture>Dry</d3p1:SkinMoisture>
+					<d3p1:SkinTemp>Cold</d3p1:SkinTemp>
+				</d3p1:Skin>
+				<d3p1:Temperature>
+					<d3p1:Location>LeftEar</d3p1:Location>
+					<d3p1:ReadingValue>0</d3p1:ReadingValue>
+					<d3p1:Units>Degrees</d3p1:Units>
+				</d3p1:Temperature>
+				<d3p1:Timestamp xmlns:d5p1="http://schemas.datacontract.org/2004/07/NextGenEMS.Backend.HelperClasses">
+					<d5p1:TimeString i:nil="true" />
+				</d3p1:Timestamp>
+			</d3p1:Vitals>
+		</VitalsReadings>
 		<Weight></Weight>
 	</Patient>
 </ArrayOfPatient>

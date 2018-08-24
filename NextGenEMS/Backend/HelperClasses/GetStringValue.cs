@@ -5,30 +5,13 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using NextGenEMS.Backend.HelperClasses;
 
-namespace NextGenEMS.Demographics
+namespace NextGenEMS.Backend.HelperClasses
 {
-    public static class DemographicEnums
+    static class EnumGetStringValue
     {
-        public enum Gender
-        {
-            Male, 
-            Female,
-            Refused,
-            NonBinary
-        }
+        #region Helper Methods
 
-        public enum Race
-        {
-            White, 
-            Hispanic,
-            AsianPacificIslander,
-            Black,
-            AmericanIndian,
-            Other
-        }
-/*
         /// <summary>
         /// Return the StringValue atribute from the enum
         /// </summary>
@@ -42,8 +25,8 @@ namespace NextGenEMS.Demographics
             FieldInfo fieldInfo = type.GetField(enumValue.ToString());
 
             //Fetch the string value attributes 
-            EnumGetStringValue.StringValueAttribute[] attributes = fieldInfo.GetCustomAttributes(
-                typeof(EnumGetStringValue.StringValueAttribute), false) as EnumGetStringValue.StringValueAttribute[];
+            StringValueAttribute[] attributes = fieldInfo.GetCustomAttributes(
+                typeof(StringValueAttribute), false) as StringValueAttribute[];
 
             //Return the StringValue attribute
             return attributes.Length > 0 ? attributes[0].StringValue : fieldInfo.Name;
@@ -60,6 +43,8 @@ namespace NextGenEMS.Demographics
             {
                 StringValue = value;
             }
-        }*/
+        }
+
+        #endregion
     }
 }

@@ -23,10 +23,14 @@ namespace NextGenEMS.People
             PatientHomeAddress = new Address();
             PatientContactInfo = new ContactInfo();
             PatientEmergencyContactInfo = new ContactInfo();
+            Opqrst = new Opqrst();
         }
 
         [DataMember]
         public List<Vitals.Vitals> VitalsReadings { get; set; }
+
+        [DataMember]
+        public List<Provider> Providers { get; set; }
 
         #region Patient Demographic Info
 
@@ -186,12 +190,60 @@ namespace NextGenEMS.People
 
         [DataMember]
         public string ProviderImpression { get; set; }
-        
 
-        #endregion 
+        [DataMember]
+        public string ProviderComments { get; set; }
 
-        
+        [DataMember]
+        public string Narrative { get; set; }
 
-        
+        #endregion
+
+        #region Procedures & Treatments
+
+        [DataMember]
+        public bool BleedingControl { get; set; }
+
+        [DataMember]
+        public bool BurnTreatment { get; set; }
+
+        [DataMember]
+        public bool Cpr { get; set; }
+
+        [DataMember]
+        public bool CSpine { get; set; }
+
+        [DataMember]
+        public bool GlucoseTreatment { get; set; }
+
+        [DataMember]
+        public bool Splint { get; set; }
+
+        [DataMember]
+        public bool Narcan { get; set; }
+
+        [DataMember]
+        public bool Nebulizer { get; set; }
+
+        [DataMember]
+        public bool ActivatedCharcoal { get; set; }
+
+        [DataMember]
+        public bool ChildbirthDelivery { get; set; }
+
+        [DataMember]
+        public bool AirwayInsertion { get; set; }
+
+        [DataMember]
+        public bool OtherTreatment { get; set; }
+
+        [DataMember]
+        public bool VentilationTreatment { get; set; }
+
+        #endregion
+
+
+
+
     }
 }

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NextGenEMS.Frontend"
         mc:Ignorable="d"
-        Title="PatientInfoEditor" Height="720" Width="1280">
+        Title="Next Gen EMS - Lenington Design [Alpha Prototype]" Height="720" Width="1280">
     <Grid>
-        <GroupBox x:Name="Demographics1" Header="Patient Demographics" HorizontalAlignment="Left" Height="125" Margin="10,10,0,0" VerticalAlignment="Top" Width="491">
+        <GroupBox x:Name="DemographicsGroupbox" Header="Patient Demographics" HorizontalAlignment="Left" Height="125" Margin="10,10,0,0" VerticalAlignment="Top" Width="491">
             <Grid HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="481" Margin="0,0,-2,-13">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="98*"/>
@@ -36,7 +36,7 @@
             </Grid>
 
         </GroupBox>
-        <GroupBox x:Name="PatientVitalsGroupBox1" Header="Patient Vitals" HorizontalAlignment="Left" Height="241" Margin="506,40,0,0" VerticalAlignment="Top" Width="711">
+        <GroupBox x:Name="PatientVitalsGroupBox" Header="Patient Vitals" HorizontalAlignment="Left" Height="241" Margin="506,40,0,0" VerticalAlignment="Top" Width="711">
             <Grid HorizontalAlignment="Left" Height="231" VerticalAlignment="Top" Width="701" Margin="0,0,-2,-13">
                 <Label Content="Timestamp" HorizontalAlignment="Left" Margin="7,-3,0,0" VerticalAlignment="Top"/>
                 <TextBox x:Name="PulseRateTextbox" HorizontalAlignment="Left" Height="22" Margin="94,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
@@ -91,9 +91,9 @@
                 <ComboBox x:Name="PulseQualityComboBox" HorizontalAlignment="Left" Margin="93,72,0,0" VerticalAlignment="Top" Width="66"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="LoadButton1" Content="Load Patient" HorizontalAlignment="Left" Margin="1088,660,0,0" VerticalAlignment="Top" Width="84" Click="LoadButton_Click" Height="27"/>
-        <Button x:Name="SaveButton1" Content="Save Database" HorizontalAlignment="Left" Margin="1177,660,0,0" VerticalAlignment="Top" Width="88" Click="SaveButton_Click" Height="27"/>
-        <GroupBox x:Name="Demographics_Copy1" Header="OPQRST" HorizontalAlignment="Left" Height="392" Margin="10,281,0,0" VerticalAlignment="Top" Width="241">
+        <Button x:Name="LoadButton" Content="Load Patient" HorizontalAlignment="Left" Margin="1088,660,0,0" VerticalAlignment="Top" Width="84" Click="LoadButton_Click" Height="27"/>
+        <Button x:Name="SaveButton" Content="Save Database" HorizontalAlignment="Left" Margin="1177,660,0,0" VerticalAlignment="Top" Width="88" Click="SaveButton_Click" Height="27"/>
+        <GroupBox x:Name="OpqrstGroupBox" Header="OPQRST" HorizontalAlignment="Left" Height="392" Margin="10,295,0,0" VerticalAlignment="Top" Width="241">
             <Grid HorizontalAlignment="Left" Height="382" Margin="10,0,-2,-13" VerticalAlignment="Top" Width="221">
                 <TextBox x:Name="OnsetTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
                 <TextBox x:Name="ProvocationTextbox" HorizontalAlignment="Left" Height="22" Margin="-10,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
@@ -111,7 +111,7 @@
                 <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="-10,288,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="Demographics_Copy" Header="SAMPLE History" HorizontalAlignment="Left" Height="392" Margin="260,281,0,0" VerticalAlignment="Top" Width="241">
+        <GroupBox x:Name="SampleGroupBox" Header="SAMPLE History" HorizontalAlignment="Left" Height="392" Margin="260,295,0,0" VerticalAlignment="Top" Width="241">
             <Grid HorizontalAlignment="Left" Height="385" Margin="0,-12,-12,-4" VerticalAlignment="Top" Width="241">
                 <TextBox x:Name="SignsSymptomsTextbox" HorizontalAlignment="Left" Height="22" Margin="9,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
                 <TextBox x:Name="AllergiesTextbox" HorizontalAlignment="Left" Height="22" Margin="9,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
@@ -129,7 +129,7 @@
                 <Label Content="Clarifying Questions" HorizontalAlignment="Left" Margin="9,298,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="PatientVitalsGroupBox1_Copy" Header="Patient Assessment" HorizontalAlignment="Left" Height="243" Margin="506,295,0,0" VerticalAlignment="Top" Width="336">
+        <GroupBox x:Name="PatientAssessmentGroupbox" Header="Patient Assessment" HorizontalAlignment="Left" Height="243" Margin="506,295,0,0" VerticalAlignment="Top" Width="336">
             <Grid HorizontalAlignment="Left" Height="223" Margin="10,10,-2,-13" VerticalAlignment="Top" Width="316">
                 <Label Content="Timestamp" HorizontalAlignment="Left" Margin="-3,-8,0,0" VerticalAlignment="Top"/>
                 <ListBox x:Name="PatientAssessmentTimestampListBox" HorizontalAlignment="Left" Height="160" Margin="-3,14,0,0" VerticalAlignment="Top" Width="75"/>
@@ -147,7 +147,7 @@
         </GroupBox>
         <TextBox x:Name="ProviderNotesTextbox" HorizontalAlignment="Left" Height="199" Margin="1048,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163"/>
         <Label Content="Provider Notes" HorizontalAlignment="Left" Margin="1048,53,0,0" VerticalAlignment="Top"/>
-        <GroupBox x:Name="PatientVitalsGroupBox1_Copy1" Header="Additional Info" HorizontalAlignment="Left" Height="360" Margin="858,295,0,0" VerticalAlignment="Top" Width="353">
+        <GroupBox x:Name="AdditionalInfoGroupbox" Header="Additional Info" HorizontalAlignment="Left" Height="360" Margin="858,295,0,0" VerticalAlignment="Top" Width="353">
             <Grid HorizontalAlignment="Left" Height="340" Margin="10,10,-2,-13" VerticalAlignment="Top" Width="333">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20*"/>
@@ -156,10 +156,10 @@
                 <TextBox x:Name="GeneralCommentsTextbox" HorizontalAlignment="Left" Height="107" Margin="0,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
                 <TextBox x:Name="NarrativeTextbox" HorizontalAlignment="Left" Height="177" Margin="0,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="2"/>
                 <Label Content="Narrative" HorizontalAlignment="Left" Margin="0,117,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-                <Label Content="Narrative" HorizontalAlignment="Left" Margin="0,-16,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                <Label Content="Provider Comments" HorizontalAlignment="Left" Margin="0,-11,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="PatientVitalsGroupBox1_Copy3" Header="Medical Personel" HorizontalAlignment="Left" Height="135" Margin="506,538,0,0" VerticalAlignment="Top" Width="336">
+        <GroupBox x:Name="MedicalPersonelGroupbox" Header="Medical Personel" HorizontalAlignment="Left" Height="135" Margin="506,538,0,0" VerticalAlignment="Top" Width="336">
             <Grid HorizontalAlignment="Left" Height="115" Margin="10,10,-2,-13" VerticalAlignment="Top" Width="316">
                 <TextBox x:Name="Provider1Name" HorizontalAlignment="Left" Height="23" Margin="-8,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
                 <TextBox x:Name="Provider2Name" HorizontalAlignment="Left" Height="23" Margin="-8,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
@@ -168,7 +168,7 @@
                 <ComboBox x:Name="Provider2Role" HorizontalAlignment="Left" Margin="254,44,0,0" VerticalAlignment="Top" Width="56"/>
                 <ComboBox x:Name="Provider3Role" HorizontalAlignment="Left" Margin="254,72,0,0" VerticalAlignment="Top" Width="56"/>
                 <Label Content="Role" HorizontalAlignment="Left" Margin="261,-11,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="Provier1LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="105,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+                <TextBox x:Name="Provider1LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="105,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
                 <TextBox x:Name="Provider2LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="105,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
                 <TextBox x:Name="Provider3LicenseNumber" HorizontalAlignment="Left" Height="23" Margin="105,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
                 <Label Content="License #" HorizontalAlignment="Left" Margin="105,-11,0,0" VerticalAlignment="Top"/>
@@ -179,36 +179,27 @@
                 <Label Content="Full Legal Name" HorizontalAlignment="Left" Margin="-8,-9,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="Demographics1_Copy" Header="Patient Demographics" HorizontalAlignment="Left" Height="125" Margin="10,10,0,0" VerticalAlignment="Top" Width="491">
-            <Grid HorizontalAlignment="Left" Height="115" VerticalAlignment="Top" Width="481" Margin="0,0,-2,-13">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="98*"/>
-                    <ColumnDefinition Width="383*"/>
-                </Grid.ColumnDefinitions>
-                <TextBox x:Name="LastNameTextbox1" HorizontalAlignment="Left" Height="22" Margin="8,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Grid.Column="1"/>
-                <Label Content="First Name" HorizontalAlignment="Left" Margin="13,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Height="26" Width="67"/>
-                <Label Content="Last Name" HorizontalAlignment="Left" Margin="8,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="66"/>
-                <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="99,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="77"/>
-                <TextBox x:Name="AgeTextbox1" HorizontalAlignment="Left" Height="22" Margin="210,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Grid.Column="1"/>
-                <Label Content="Age" HorizontalAlignment="Left" Margin="206,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="31"/>
-                <TextBox x:Name="FirstNameTextbox1" HorizontalAlignment="Left" Height="21" Margin="13,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-                <DatePicker x:Name="DateOfBirthDatePicker1" HorizontalAlignment="Left" Margin="100,27,0,0" VerticalAlignment="Top" Grid.Column="1" Height="24" Width="102"/>
-                <TextBox x:Name="StreetAddressTextbox1" HorizontalAlignment="Left" Height="21" Margin="13,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"/>
-                <TextBox x:Name="StateTextbox1" HorizontalAlignment="Left" Height="21" Margin="8,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Grid.Column="1"/>
-                <TextBox x:Name="CityTextbox1" HorizontalAlignment="Left" Height="21" Margin="100,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
-                <Label Content="Street Address" HorizontalAlignment="Left" Margin="13,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.ColumnSpan="2" Height="26" Width="87"/>
-                <Label Content="State" HorizontalAlignment="Left" Margin="6,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="36"/>
-                <Label Content="City" HorizontalAlignment="Left" Margin="99,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="30"/>
-                <TextBox x:Name="WeightTextbox1" HorizontalAlignment="Left" Height="21" Margin="207,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" Grid.Column="1"/>
-                <Label Content="Weight" HorizontalAlignment="Left" Margin="206,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="48"/>
-                <Label Content="Gender" HorizontalAlignment="Left" Margin="264,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="49"/>
-                <Label Content="Race" HorizontalAlignment="Left" Margin="266,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.529" Grid.Column="1" Height="26" Width="35"/>
-                <ComboBox x:Name="GenderComboBox1" HorizontalAlignment="Left" Margin="266,29,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="22"/>
-                <ComboBox x:Name="RaceComboBox1" HorizontalAlignment="Left" Margin="266,73,0,0" VerticalAlignment="Top" Width="101" Grid.Column="1" Height="22"/>
+        <GroupBox Header="Procedures &amp; Treatments (EMT Common, Partial List)" HorizontalAlignment="Left" Height="150" Margin="10,140,0,0" VerticalAlignment="Top" Width="491">
+            <Grid HorizontalAlignment="Left" Height="130" Margin="10,10,-2,-13" VerticalAlignment="Top" Width="471">
+                <CheckBox x:Name="VentilationCheckbox" Content="Ventilation" HorizontalAlignment="Left" Margin="168,93,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="BurnTreatmentCheckbox" Content="Severe Burn Treatment" HorizontalAlignment="Left" Margin="168,13,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="CprCheckbox" Content="CPR / Life Support" HorizontalAlignment="Left" Margin="311,13,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="GlucoseTreatmentCheckbox" Content="Blood Glucose" HorizontalAlignment="Left" Margin="168,33,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="TractionExtremitySplint" Content="Traction / Extremity Splint" HorizontalAlignment="Left" Margin="311,33,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="NebulizerCheckbox" Content="Nebuzlier" HorizontalAlignment="Left" Margin="168,53,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="ActivatedCharcoalCheckbox" Content="Activated Charcoal" HorizontalAlignment="Left" Margin="311,53,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="AirwayInsertionCheckbox" Content="Airway Insertion" HorizontalAlignment="Left" Margin="168,73,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="AirwayTypeComboBox" HorizontalAlignment="Left" Margin="311,73,0,0" VerticalAlignment="Top" Width="84" Height="22"/>
+                <ComboBox x:Name="VentilationTypeComboBox" HorizontalAlignment="Left" Margin="311,100,0,0" VerticalAlignment="Top" Width="84" Height="20"/>
+                <ComboBox x:Name="AirwayFLowVolumeComboBox" HorizontalAlignment="Left" Margin="400,73,0,0" VerticalAlignment="Top" Width="66" Height="22"/>
+                <ComboBox x:Name="VentilationVolumeComboBox" HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top" Width="66" Height="20"/>
+                <CheckBox x:Name="BleedingControlCheckbox" Content="Bleeding Control / Tournquet" HorizontalAlignment="Left" Margin="-10,13,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="CervicalImmobilization" Content="Cervical Immobilization" HorizontalAlignment="Left" Margin="-10,33,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="NarcanCheckbox" Content="Narcan Injection" HorizontalAlignment="Left" Margin="-10,53,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="ChildbirthDeliveryCheckbox" Content="Childbirth Delivery" HorizontalAlignment="Left" Margin="-10,73,0,0" VerticalAlignment="Top"/>
+                <CheckBox x:Name="OtherTreatmentCheckbox" Content="Other (See Comments)" HorizontalAlignment="Left" Margin="-10,93,0,0" VerticalAlignment="Top"/>
             </Grid>
-
         </GroupBox>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="135" Margin="10,140,0,0" VerticalAlignment="Top" Width="491"/>
 
     </Grid>
 </Window>

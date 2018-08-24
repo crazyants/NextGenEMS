@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using NextGenEMS.Demographics;
+using NextGenEMS.EMS;
 
 namespace NextGenEMS.People
 {
@@ -12,6 +13,9 @@ namespace NextGenEMS.People
     {
         [DataMember]
         public string ProviderOrgnizationId { get; set; }
+
+        [DataMember]
+        public License License { get; set; }
 
         [DataMember]
         public string LastName { get; set; }
@@ -39,5 +43,14 @@ namespace NextGenEMS.People
 
         [DataMember]
         public ContactInfo PatientEmergencyContactInfo { get; set; }
+
+        #region Public Methods
+
+        public string FullName()
+        {
+            return (FirstName + " " + LastName);
+        }
+
+        #endregion
     }
 }

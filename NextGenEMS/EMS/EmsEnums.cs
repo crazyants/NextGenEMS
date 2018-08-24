@@ -4,7 +4,7 @@ namespace NextGenEMS.EMS
 {
     public class EmsEnums
     {
-        public enum LicenseType
+        public enum LicenseClassification
         {
             CPR,
             EMR,
@@ -19,6 +19,13 @@ namespace NextGenEMS.EMS
             Active,
             Lapsed,
             Revoked
+        }
+
+        public enum ProviderRole
+        {
+            Lead,
+            Assistant,
+            Volunteer
         }
     }
 }
